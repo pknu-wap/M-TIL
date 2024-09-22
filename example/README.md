@@ -2,7 +2,7 @@
 
 | 주차 | 날짜 | 주제 | 링크 |
 |--|--|--|--|
-| [1주차-1](www.github.com/pknu-wap/M-TIL/Week1) | 24.09.16 | Kotlin의 Data Class 및 알고리즘 1문제 | [Data class](www.github.com/pknu-wap/M-TIL), [알고리즘](https://blog.naver.com/pluto0303/223379290683) |
+| [1주차](www.github.com/pknu-wap/M-TIL/Week1) | 24.09.16 | Kotlin의 Data Class 및 알고리즘 1문제 | [Data class](www.github.com/pknu-wap/M-TIL), [알고리즘](https://blog.naver.com/pluto0303/223379290683) |
 | [2주차](www.github.com/pknu-wap/M-TIL/Week2) | 24.09.22 | 알고리즘 3문제, 독서 | [숨바꼭질](https://blog.naver.com/pluto0303/223338265094), [쉬운 계단 수](https://blog.naver.com/pluto0303/223370681244) |
 
 ### 목표
