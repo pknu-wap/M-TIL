@@ -123,7 +123,7 @@
 
 - 정보
     - Tier: Gold2
-    - Tag: topological_sorting
+    - Tag: parametric_search, greedy
 
 - 타임라인
     - Problem Open: 09/25 21:40?
@@ -143,7 +143,7 @@
 
 ## 공부한 내용
 
-- 매개 변수 탐색 (parametric search)
+- 매개 변수 탐색 (parametric_search)
 - 오일러 피 함수 (euler_phi)
 
 ## 다음주 목표
