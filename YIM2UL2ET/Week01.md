@@ -143,7 +143,7 @@
 
 ## 공부한 내용
 
-- 매개 변수 탐색 (parametric_search)
+- [매개 변수 탐색 (parametric_search)](https://yim2ul2et.github.io/posts/%EC%9D%B4%EB%B6%84%ED%83%90%EC%83%89%EA%B3%BC-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%ED%83%90%EC%83%89/)
 - 오일러 피 함수 (euler_phi)
 
 ## 다음주 목표
