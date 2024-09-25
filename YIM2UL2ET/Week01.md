@@ -94,6 +94,29 @@
 
 </details>
 
+### [BOJ 1766 - 문제집](https://www.acmicpc.net/problem/1766)
+<details>
+<summary>보기</summary>
+
+- 정보
+    - Tier: Gold2
+    - Tag: topological_sorting
+
+- 타임라인
+    - Problem Open: 09/25 18:47
+    - Tag Open: --/-- --:--
+    - Solve: 09/25 19:31
+
+- 풀이
+    - 우선순위 큐를 사용하여 위상정렬
+    - 정렬 조건: 현재 풀 수 있는 문제 중에서 쉬운(순번이 작은) 문제
+    - 현재 풀 수 있는 문제 = 현재 문제보다 먼저 풀어야 할 문제가 없는 문제
+
+- 회고
+    - C++에서 priorit_queue는 기본적으로 최대 힙이다.
+
+</details>
+
 ## 공부한 내용
 
 - 매개 변수 탐색 (parametric search)
