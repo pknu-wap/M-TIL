@@ -94,7 +94,7 @@
 
 </details>
 
-### [BOJ 1766 - 문제집](https://www.acmicpc.net/problem/1766)
+### [BOJ 15317 - 문제집](https://www.acmicpc.net/problem/15317)
 <details>
 <summary>보기</summary>
 
