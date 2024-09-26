@@ -141,6 +141,51 @@
 
 </details>
 
+### [BOJ 1865 - 웜홀](https://www.acmicpc.net/problem/1865)
+<details>
+<summary>보기</summary>
+
+- 정보
+    - Tier: Gold3
+    - Tag: bellman_ford
+
+- 타임라인
+    - Problem Open: 09/26 12:00?
+    - Tag Open: --/-- --:--
+    - Solve: 09/26 12:59
+
+- 풀이
+    - 음의 가중치 간선이 있으므로 벨만포드 또는 플로이드 워셜을 사용하여 음의 사이클이 생기는지 확인
+    - 이때 플로이드 워셜은 $O(V^3)$, 벨만포드는 $O(V\cdot E)$의 알고리즘을 가지므로, 시간 복잡도가 적은 벨만포드를 선택하는 것이 적절함.
+      
+- 회고
+    - 플로이드 워셜과, 벨만포드 알고리즘을 복습하자.
+
+</details> 
+
+### [BOJ 20040 - 사이클 게임](https://www.acmicpc.net/problem/20040)
+<details>
+<summary>보기</summary>
+
+- 정보
+    - Tier: Gold4
+    - Tag: union_find
+
+- 타임라인
+    - Problem Open: 09/26 21:40?
+    - Tag Open: --/-- --:--
+    - Solve: 09/26 22:52
+
+- 풀이
+    - 2 ~ m+1번째 각 줄에 노드를 두 개씩 입력받아 두 노드의 루트노드가 같으면 사이클이 생기는 것을 이용하여 해결하는 문제
+      
+- 회고
+    - union_find를 사용하는 문제라는 것은 간파하였으나, 해당 알고리즘을 대략적으로만 이해한 나머지 구현 및 최적화를 제대로 하지 못한 것이 보였던 문제
+    - 특히 parent[parent[u]] = parent[v]로 갱신해야 하는것을 최적화 한답시고 parent 배열 이름을 root로 바꾸었다가 root[u] = root[v]로 적어 심각한 논리적 오류가 돋보이는 코드를 제출하였음
+    - union_find 복습하자.
+
+</details>
+
 ## 공부한 내용
 
 - [매개 변수 탐색 (parametric_search)](https://yim2ul2et.github.io/posts/%EC%9D%B4%EB%B6%84%ED%83%90%EC%83%89%EA%B3%BC-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%ED%83%90%EC%83%89/)
@@ -148,7 +193,7 @@
 
 ## 다음주 목표
 - 1Day 1Solve
-- 종만북 읽기
+- 플로이드 워셜, 벨만포드, 유니온 파인드 복습
 
 ## 특이사항
 - 없음
