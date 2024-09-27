@@ -186,6 +186,28 @@
 
 </details>
 
+### [BOJ 25916 - 싫은데요](https://www.acmicpc.net/problem/25916)
+<details>
+<summary>보기</summary>
+
+- 정보
+    - Tier: Silver1
+    - Tag: two_pointer
+
+- 타임라인
+    - Problem Open: 09/27 12:35
+    - Tag Open: --/-- --:--
+    - Solve: 09/27 12:45
+
+- 풀이
+    - 누적합을 구한 후, 투 포인터를 사용하여 M보다 작은 최댓값을 갱신
+    - 부여되는 값이 크므로 long long 자료형 사용
+      
+- 회고
+    - 제출 전 검토하기 (자료형 확인, if문 부등호 제대로 확인)
+
+</details>
+
 ## 공부한 내용
 
 - [매개 변수 탐색 (parametric_search)](https://yim2ul2et.github.io/posts/%EC%9D%B4%EB%B6%84%ED%83%90%EC%83%89%EA%B3%BC-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%ED%83%90%EC%83%89/)
