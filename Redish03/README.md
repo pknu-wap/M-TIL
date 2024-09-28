@@ -2,7 +2,7 @@
 
 | 주차 | 날짜 | 주제 | 링크 |
 |--|--|--|--|
-| [1주차](https://github.com/pknu-wap/M-TIL/blob/main/example/Week1.md) | 24.09.28 | Kotlin의 Data Class 및 알고리즘 1문제 |  |
+| [1주차](https://github.com/pknu-wap/M-TIL/blob/main/example/Week01.md) | 24.09.28 | 배낭 알고리즘, 독서 |  |
 
 
 ### 목표
