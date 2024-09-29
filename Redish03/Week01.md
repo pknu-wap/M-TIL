@@ -4,13 +4,13 @@
 ## 문제
 
 ### 7579 - 앱
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b0078df0-8e0f-42b1-9c37-cd13fc42e65c/ea1cb2f0-52ca-4190-9190-2e90abae6388/image.png)
-
 - DP, 배낭 문제
-- 코드 & 설명
+<details>
+<summary> 코드 & 설명 </summary>
+    <div>
     - 배낭 문제를 조금만 응용한 문제.
     
-    ``` c++
+``` c++
     #include <iostream>
     #include <algorithm>
     
@@ -50,7 +50,57 @@
         return 0;
     }
     
-    ```
+```
+</div>
+</details>
+
+### 14852 - 타일 채우기 3
+
+- DP
+<details>
+<summary> 코드 & 설명 </summary>
+    <div>
+    - 점화식이 아래와 같이 나온다.
+    - $DP(N) = 2 * DP(N - 1) + 3 * DP(N - 2) + 2 * SUM(N - 3)$
+    - for문을 이중으로 돌리면 시간 복잡도가 O(N^2)가 되므로, O(N)으로 만들기 위해 2차원 배열 또는 1차원 배열 두 개를 이용한다.
+    
+``` c++
+#include<iostream>
+
+using namespace std;
+
+long long dp[1000001];
+long long sum[1000001];
+
+long long DP(int x) {
+    dp[0] = 0;
+    dp[1] = 2;
+    dp[2] = 7;
+    sum[0] = 0;
+    sum[1] = 2;
+    sum[2] = 9;
+    
+    for(int i = 3; i <= x; i++) {
+        dp[i] = (2 * dp[i - 1] + 3 * dp[i - 2] + 2 * sum[i - 3] + 2) % 1000000007;
+        sum[i] = (dp[i] + sum[i - 1]) % 1000000007;
+    }
+    
+    return dp[x];
+}
+
+int main()
+{
+    int N;
+    cin >> N;
+    cout << DP(N);
+    return 0;
+}
+
+```
+        
+</div>
+
+</details>
 
 ## 공부한 내용
 - <개발자의 글쓰기> 책 완독
@@ -58,9 +108,10 @@
 
 
 ## 다음주 목표
-- 3km 4일
+- 3km 뜀걸음 4일
 - 알고리즘 5문제
-- 
+- <도파민네이션> 읽기
+- <프롬프트 엔지니어링> 블로그 쓰기
 
 ## 특이사항
 - 
