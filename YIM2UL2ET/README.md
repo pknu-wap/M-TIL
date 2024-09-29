@@ -14,4 +14,5 @@
 ## 업데이트 현황
 ```
 24.09.24 README update
+24.09.29 Week01 update
 ```
