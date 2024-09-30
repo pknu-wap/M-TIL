@@ -3,24 +3,28 @@
 
 ## 풀었던 문제
 
-### []()
+### [BOJ 19621 - 회의실 배정 2](https://www.acmicpc.net/problem/19621)
 <details>
 <summary>보기</summary> 
 
 - 정보
-    - Tier:
-    - Tag:
+    - Tier: Silver2
+    - Tag: dynamic_programming, bruteforce
 
 - 타임라인
-    - Problem Open:
-    - Tag Open:
-    - Solve:
+    - Problem Open: 09/30 10:30
+    - Tag Open: 09/30 10:30
+    - Solve: 09/30 11:30
 
 - 풀이
-    - 풀이 정보
+    - DP 연습하려고 DP로 풀이
+    - K번째 회의가 K-1번째 회의와 K+1번째 회의랑만 겹친다는 것을 이용한다.
+    - memo[i]: i번째 회의까지 보았을 때 제일 많이 들어가는 인원 수의 총합
+    - memo[i] = max(memo[i - 1], memo[i - 2] + meetingPeople[i]);
 
 - 회고
-    - 노트
+    - 문제와 조건을 잘 읽자.. (임의의 회의 K(1≤ K ≤ N)는 회의 K − 1과 회의 K + 1과는 회의 시간이 겹치고 다른 회의들과는 회의 시간이 겹치지 않는다. <- 이 조건 안읽어서 40분동안 삽질 겁나 하다가 깨달음)
+    - 근데 겹치는 조건이 저렇게 있으면 시작시간, 끝나는 시간 왜 적어놓은거임..? 훼이크인가?? (실제로 풀이에 아무 쓸모가 없음;;)
 
 </details>
 
