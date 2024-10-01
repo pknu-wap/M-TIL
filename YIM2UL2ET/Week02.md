@@ -28,6 +28,29 @@
 
 </details>
 
+### [BOJ 21992 - 학부 연구생 민상](https://www.acmicpc.net/problem/21922)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: Gold5
+    - Tag: implementation
+
+- 타임라인
+    - Problem Open: 10/01 18:10
+    - Tag Open: --/-- --:--
+    - Solve: 10/01 19:10
+
+- 풀이
+    - 단순한 구현문제
+    - 설계시 이상 없는지 체크 확실하게 하면 간단하게 풀 수 있음.
+
+- 회고
+    - enum 공부
+    - 너무 피곤하다
+
+</details>
+
 ## 참가한 오픈 콘테스트
 
 ### []()
