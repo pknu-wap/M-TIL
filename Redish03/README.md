@@ -2,7 +2,8 @@
 
 | 주차 | 날짜 | 주제 | 링크 |
 |--|--|--|--|
-| [1주차](https://github.com/pknu-wap/M-TIL/blob/main/example/Week01.md) | 24.09.28 | 배낭 알고리즘, 독서 |  |
+| [1주차](https://github.com/pknu-wap/M-TIL/blob/main/Redish03/Week01.md) | 24.09.28 | 배낭 알고리즘, 독서 |  |
+| [2주차](https://github.com/pknu-wap/M-TIL/blob/main/Redish03/Week02.md) | 24.10.01 | 알고리즘, 독서 |  |
 
 
 ### 목표
