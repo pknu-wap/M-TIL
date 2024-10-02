@@ -51,7 +51,7 @@
 
 </details>
 
-### [BOJ 21992 - 학부 연구생 민상](https://www.acmicpc.net/problem/21922)
+### [BOJ 1071 - 소트](https://www.acmicpc.net/problem/1071)
 <details>
 <summary>보기</summary> 
 
