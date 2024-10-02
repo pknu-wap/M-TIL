@@ -8,7 +8,7 @@
 <summary>보기</summary> 
 
 - 정보
-    - Tier: Silver2
+    - Tier: Silver Ⅱ
     - Tag: dynamic_programming, bruteforce
 
 - 타임라인
@@ -33,7 +33,7 @@
 <summary>보기</summary> 
 
 - 정보
-    - Tier: Gold5
+    - Tier: Gold Ⅴ
     - Tag: implementation
 
 - 타임라인
@@ -48,6 +48,28 @@
 - 회고
     - enum 공부
     - 너무 피곤하다
+
+</details>
+
+### [BOJ 21992 - 학부 연구생 민상](https://www.acmicpc.net/problem/21922)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: Platinum Ⅴ
+    - Tag: greedy
+
+- 타임라인
+    - Problem Open: 10/01 22:00
+    - Tag Open: --/-- --:--
+    - Solve: 10/02 12:13
+
+- 풀이
+    - ans[0] = -2, $1 \le i \ge N$ 로 정의
+    - ans[i] = if (남은 수가 k, k+1 형태의 두가지 종류의 수 밖에 없을 때) : k + 1을 넣음 / else : ans[i - 1] + 1 이 아닌 최솟값을 넣음.
+
+- 회고
+    - 컴퓨터에서 손 놓고 생각만 오래했던 문제 (실제론 3시간 정도만에 풀이가 생각남)
 
 </details>
 
