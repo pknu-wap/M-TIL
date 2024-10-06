@@ -62,6 +62,8 @@ int main()
 
 
 ## 공부한 내용
+[<프롬프트 엔지니어링>-반병현](https://blog.naver.com/pluto0303/223603245206)
+[<AI 사피엔스>](https://blog.naver.com/pluto0303/223608684266)
 
 
 ## 다음주 목표
