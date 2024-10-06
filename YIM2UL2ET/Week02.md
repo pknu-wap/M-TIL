@@ -83,26 +83,26 @@
 |---|---|---|---|---|---|---|---|---|---|---|
 |결과| AC | AC | AC | AC | AC | - | WA | - | - | - | - |
 
-- A번: 바코드 닉네임
+- A번: [바코드 닉네임](https://www.acmicpc.net/problem/32288)
     - string 입력받아서 l을 L로, I를 i로 바꿔서 출력하는 문제
  
-- B번: Max-Queen
+- B번: [Max-Queen](https://www.acmicpc.net/problem/32289)
     - 체스판에 여러개의 퀸을 두었을 때, 서로 잡을 수 있는 경우의 수 / 2
     - n * m 체스판 크기가 주어지므로, 정답은 ((꼭짓점 퀸의 수 * 3) + (테두리 퀸의 수 * 5) + (나머지 퀸의 수 * 8)) / 2
  
-- C번: MEX vs OR
+- C번: [MEX vs OR](https://www.acmicpc.net/problem/32290)
     - $n = \lbrace m | m \in \mathbb{Z}, l \le m \le r \rbrace$와 $x$를 OR연산 시켜서 나온 값중 음이 아닌 정수 중 가장 작은 값을 출력하는 문제
     - 비트연산을 활용한 구현
 
-- D번: $x$와 $x+1$의 차이
+- D번: [$x$와 $x+1$의 차이]((https://www.acmicpc.net/problem/32291)
      - $x$를 입력받아 임의의 $n \in \mathbb{Z}^+$에 대하여 $x \div n \neq (x + 1) \div n$인 n을 찾는 문제
      - $x+1$의 약수를 찾으면 된다.
  
-- E번: ABB to BA (Easy)
+- E번: [ABB to BA (Easy)](https://www.acmicpc.net/problem/32292)
      - string을 입력받아, 문자열에 "ABB"가 있으면 "BA"로 바꾸어, "ABB"가 없을 때 까지 반복한 다음 출력하는 문제
      - 구현으로 처리 (F번이 Hard였는데 제한이 너무 크게 늘어 해결하지 못함)
  
-- G번: 수열과 개구리
+- G번: [수열과 개구리](https://www.acmicpc.net/problem/32294)
      - 기다리는 시간 $a_i$와 움직이는 거리 $b_i$ ($i \in \mathbb{Z}_{n-1}$)를 입력받은 후, 수열 바깥으로 가는 최소 시간 구하기
      - DP인듯 한데.. 왜 안되는건지 모르겠음. 내가 모르는 잘못된 설계가 있나봄. 1시간반 정도 날림
      - 다음날 태그 확인하니 다익스트라 (이게???)
