@@ -94,7 +94,7 @@
     - $n = \lbrace m | m \in \mathbb{Z}, l \le m \le r \rbrace$와 $x$를 OR연산 시켜서 나온 값중 음이 아닌 정수 중 가장 작은 값을 출력하는 문제
     - 비트연산을 활용한 구현
 
-- D번: [$x$와 $x+1$의 차이]((https://www.acmicpc.net/problem/32291)
+- D번: [x와 x+1의 차이](https://www.acmicpc.net/problem/32291)
      - $x$를 입력받아 임의의 $n \in \mathbb{Z}^+$에 대하여 $x \div n \neq (x + 1) \div n$인 n을 찾는 문제
      - $x+1$의 약수를 찾으면 된다.
  
