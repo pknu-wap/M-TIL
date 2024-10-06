@@ -3,7 +3,7 @@
 | 주차 | 날짜 | 주제 | 링크 |
 |--|--|--|--|
 | [1주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week01.md) | 24.09.23 ~ 24.09.29 | 매개 변수 탐색 (parametric search) | [블로그](https://yim2ul2et.github.io/posts/%EC%9D%B4%EB%B6%84%ED%83%90%EC%83%89%EA%B3%BC-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%ED%83%90%EC%83%89/) |
-| [2주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week02.md) | 24.09.30 ~ 24.10.06 | 구현, DP 연습 및 알고리즘 복습 | - |
+| [2주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week02.md) | 24.09.30 ~ 24.10.06 | - | - |
 
 ## 목표
 - 1Day 1Solve
@@ -16,4 +16,5 @@
 ```
 24.09.24 README update
 24.09.29 Week01 update
+24.10.06 Week02 update
 ```
