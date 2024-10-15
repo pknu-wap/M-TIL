@@ -178,6 +178,48 @@
 
 </details>
 
+### [BOJ 1197 - 최소 스패닝 트리](https://www.acmicpc.net/problem/1197)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅣ
+    - Tag: MST
+
+- 타임라인
+    - Problem Open: 10/15 22:00
+    - Tag Open: --/-- --:--
+    - Solve: 10/15 23:06
+
+- 풀이
+    - 전형적인 MST 찾는 문제 (크루스칼로 풀이)
+
+- 회고
+    - 약 10분만에 구현이 끝났으나, 정렬 함수를 이상하게 짜는 바람에 50분을 날려버림
+    - **정렬 함수 구현시 <= 또는 >= 절때 사용 금지**
+
+</details>
+
+### [BOJ 15681 - 트리와 쿼리](https://www.acmicpc.net/problem/15681)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅤ
+    - Tag: dp_tree
+
+- 타임라인
+    - Problem Open: 10/15 23:10
+    - Tag Open: --/-- --:--
+    - Solve: 10/15 23:18
+
+- 풀이
+    - DFS로 쿼리 수 찾아서 memo에 저장하여 바로 출력할 수 있게 풀이
+
+- 회고
+    - EASY~(2)
+
+
 ## 공부한 내용
 - 책읽고 블로그에 남겨
 
