@@ -127,6 +127,57 @@
 
 </details>
 
+### [BOJ 10942 - 팰린드롬?](https://www.acmicpc.net/problem/10942)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅣ
+    - Tag: dynamic_programming
+
+- 타임라인
+    - Problem Open: 10/15 18:40
+    - Tag Open: --/-- --:--
+    - Solve: 10/15 18:54
+
+- 풀이
+    - 팰린드롬이 되는 경우의 수를 다 조사하여 2차원 배열에 저장 (memo[i][j] = i~j가 팰린드롬인가)
+    - ```cpp
+      void update(int start, int end) {
+        while (nums[start] == nums[end]) {
+            memo[start][end] = true;
+            start--; end++;
+            if (start < 0 || end >= N) break;
+        }
+      }
+
+- 회고
+    - EASY~
+
+</details>
+
+### [BOJ 1647 - 도시 분할 계획](https://www.acmicpc.net/problem/1647)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅣ
+    - Tag: MST
+
+- 타임라인
+    - Problem Open: 10/15 18:55
+    - Tag Open: 10/15 19:47
+    - Solve: 10/15 20:03
+
+- 풀이
+    - 크루스칼 알고리즘을 사용하여 풀이
+    - ans = MST 가중치 - MST 가중치 안의 최대값
+
+- 회고
+    - MST를 배웠다. (맛있다)
+
+</details>
+
 ## 공부한 내용
 - 책읽고 블로그에 남겨
 
