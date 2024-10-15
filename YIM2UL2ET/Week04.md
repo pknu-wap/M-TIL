@@ -105,6 +105,28 @@
 
 </details>
 
+### [BOJ 17404 - RGB거리 2](https://www.acmicpc.net/problem/17404)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅣ
+    - Tag: dynamic_programming
+
+- 타임라인
+    - Problem Open: 10/15 11:50 
+    - Tag Open: --/-- --:--
+    - Solve: 10/14 12:44
+
+- 풀이
+    - $dp[i][j]$ = 첫 시작 색이 $j/3$번째이고, 현재 색이 $j%3%일때 최소 누적 합
+    - 정답 : $dp[N-1][k] (k \in {1, 2, 3, 5, 6, 7})$ -> 0, 4, 8번째 제외
+
+- 회고
+    - DP 어려워용
+
+</details>
+
 ## 공부한 내용
 - 책읽고 블로그에 남겨
 
