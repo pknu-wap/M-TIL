@@ -120,7 +120,7 @@
 
 - 풀이
     - $dp[i][j]$ = 첫 시작 색이 $j/3$번째이고, 현재 색이 $j%3%일때 최소 누적 합
-    - 정답 : $dp[N-1][k] (k \in {1, 2, 3, 5, 6, 7})$ -> 0, 4, 8번째 제외
+    - 정답 : $dp[N-1][k] (k \in \lbrace 1, 2, 3, 5, 6, 7\rbrace)$ -> $0, 4, 8$번째 제외
 
 - 회고
     - DP 어려워용
@@ -219,6 +219,102 @@
 - 회고
     - EASY~(2)
 
+</details>
+
+### [BOJ 7579 - 앱](https://www.acmicpc.net/problem/7579)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅢ
+    - Tag: knapsack
+
+- 타임라인
+    - Problem Open: 10/16 18:00
+    - Tag Open: --/-- --:--
+    - Solve: 10/16 18:35
+
+- 풀이
+    - 냅색문제로 2차원 $memo$ 만든 후, $ans = min \lbrace K | K \in memo[i][j] \le M \rbrace $를 출력
+
+- 회고
+    - 구현에 좀 버벅임
+
+</details>
+
+### [BOJ 1922 - 네트워크 연결](https://www.acmicpc.net/problem/1922)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅣ
+    - Tag: MST
+
+- 타임라인
+    - Problem Open: 10/16 18:36
+    - Tag Open: --/-- --:--
+    - Solve: 10/16 18:51
+
+- 풀이
+    - 크루스칼로 풀이
+
+- 회고
+    - MST, 크루스칼 복습
+
+</details>
+
+### [BOJ 2583 - 영역 구하기](https://www.acmicpc.net/problem/2583)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: SilverⅠ
+    - Tag: graph_traversal
+
+- 타임라인
+    - Problem Open: 10/16 19:20??
+    - Tag Open: --/-- --:--
+    - Solve: 10/16 19:40
+
+- 풀이
+    - DFS로 풀이
+
+- 회고
+    - 구현에 조금 버벅임
+
+</details>
+
+### [BOJ 1806 - 부분합](https://www.acmicpc.net/problem/1806)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅣ
+    - Tag: two_pointer
+
+- 타임라인
+    - Problem Open: 10/16 19:00??
+    - Tag Open: --/-- --:--
+    - Solve: 10/16 19:48
+
+- 풀이
+    - 누적합과 투포인터를 활용하는 아주 쉬운 문제
+    - ```cpp
+      while (right <= N) {
+        if (sum[right] - sum[left] >= M) {
+            ans = min(ans, right - left);
+            left++;
+        } else {
+            right++;
+        }
+      }
+
+      cout << (ans == INF ? 0 : ans);
+
+- 회고
+    - 실 풀이시간 약 20분
+
+</details>
 
 ## 공부한 내용
 - 책읽고 블로그에 남겨
@@ -228,3 +324,4 @@
 
 ## 특이사항
 - 10/14 ~ 10/18 진지공사기간
+- 10/16 [solved.ac](https://solved.ac/profile/yim2ul2et) Platinum5 + Class5 + 500AC !!
