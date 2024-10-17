@@ -316,6 +316,42 @@
 
 </details>
 
+### [BOJ 28251 - 나도리합](https://www.acmicpc.net/problem/28251)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅢ
+    - Tag: union_find
+
+- 타임라인
+    - Problem Open: 10/17 11:55
+    - Tag Open: --/-- --:--
+    - Solve: 10/17 12:30
+
+- 풀이
+    - union_find를 활용하여 풀이
+    - memo[i] = i가 속해있는 그룹의 전투력, sum[i] = i가 속해있는 그룹의 누적값
+    - u가 속해있는 그룹과 v가 속해있는 그룹을 합칠 때 전투력 = memo[u] + memo[v] + sum[u] * sum[v]
+    - ```cpp
+      long long unionParent(int a, int b) {
+        a = getParent(a);
+        b = getParent(b);
+        if (a != b) {
+          parent[b] = a;
+            
+          memo[a] = memo[a] + memo[b] + sum[a] * sum[b];
+          sum[a] += sum[b];
+          memo[b] = 0; sum[b] = 0;
+        }
+        return memo[a];
+      }
+
+- 회고
+    - 정답의 최대 크기를 측정하지 않아 오버플로우로 WA 한번 났음. ㄲㅂ
+
+</details>
+
 ## 공부한 내용
 - 책읽고 블로그에 남겨
 
