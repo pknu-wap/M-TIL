@@ -5,6 +5,8 @@
 | [1주차](https://github.com/pknu-wap/M-TIL/blob/main/Redish03/Week01.md) | 24.09.28 | 배낭 알고리즘, 독서 |  |
 | [2주차](https://github.com/pknu-wap/M-TIL/blob/main/Redish03/Week02.md) | 24.10.01 | 알고리즘, 독서 | [독서 블로그](https://blog.naver.com/pluto0303/223603245206) |
 | [3주차](https://github.com/pknu-wap/M-TIL/blob/main/Redish03/Week03.md) | 24.10.13 | 근무 | |
+| [4주차](https://github.com/pknu-wap/M-TIL/blob/main/Redish03/Week04.md) | 24.10.19 | 호국준비 | |
+
 
 
 ### 목표
