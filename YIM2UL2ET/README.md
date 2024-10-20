@@ -5,6 +5,8 @@
 | [1주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week01.md) | 24.09.23 ~ 24.09.29 | 매개 변수 탐색 (parametric search) | [블로그](https://yim2ul2et.github.io/posts/%EC%9D%B4%EB%B6%84%ED%83%90%EC%83%89%EA%B3%BC-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%ED%83%90%EC%83%89/) |
 | [2주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week02.md) | 24.09.30 ~ 24.10.06 | - | - |
 | [3주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week03.md) | 24.10.07 ~ 24.10.13 | - | - |
+| [4주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week04.md) | 24.10.014 ~ 24.10.20 | solved.ac Class5 | - |
+
 
 ## 목표
 - 1Day 1Solve
@@ -19,4 +21,5 @@
 24.09.29 Week01 update
 24.10.06 Week02 update
 24.10.13 Week03 update
+24.10.20 Week03 update
 ```
