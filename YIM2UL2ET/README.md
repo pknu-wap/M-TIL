@@ -6,7 +6,7 @@
 | [2주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week02.md) | 24.09.30 ~ 24.10.06 | - | - |
 | [3주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week03.md) | 24.10.07 ~ 24.10.13 | - | - |
 | [4주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week04.md) | 24.10.14 ~ 24.10.20 | solved.ac Class5 | - |
-| [5주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week05.md) | 24.10.21 ~ 24.10.27 | 브루트포스(brute force) & 분할 정복(divide & conquer) | - |
+| [5주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week05.md) | 24.10.21 ~ 24.10.27 | 브루트포스(bruteforcing) & 구현(implementation) | - |
 
 
 
