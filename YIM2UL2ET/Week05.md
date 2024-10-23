@@ -18,6 +18,12 @@
 
 - 풀이
     - 코드로 대체
+
+- 회고
+    - 이렇게까지 오래 걸릴 문제가 아니었는데.. 구현에 문제가 있었는지 뭔가 자꾸 잘못되서 도중에 한번 코드 갈아엎음
+    - 설계를 잘하자 + 구현력 키우기
+ 
+- 코드
     - ```cpp
       #include <iostream>
       #include <vector>
@@ -97,10 +103,6 @@
       }
       ```
 
-- 회고
-    - 이렇게까지 오래 걸릴 문제가 아니었는데.. 구현에 문제가 있었는지 뭔가 자꾸 잘못되서 도중에 한번 코드 갈아엎음
-    - 설계를 잘하자 + 구현력 키우기
-
 </details>
 
 ### [BOJ 3019 - 테트리스](https://www.acmicpc.net/problem/3019)
@@ -119,6 +121,12 @@
 - 풀이
     - 블럭의 바닥부분이 전부 필드와 맞닿아야 하므로 높이 중심으로 구현
     - 각 블럭이 놓을 수 있는 방식에 필요한 필드 높이를 2차원 배열로 하여 총 3차원 배열로 초기화하여 풀이
+    
+
+- 회고
+    - for문 범위 확인하기 정도? 주의하기
+
+- 코드
     - ```cpp
       #include <iostream>
       #include <vector>
@@ -177,8 +185,146 @@
       }
       ```
 
+</details>
+
+### [BOJ 12100 - 2048 (Easy)](https://www.acmicpc.net/problem/12100)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅠ
+    - Tag: bruteforcing, implementation, backtracking
+
+- 타임라인
+    - Problem Open: 10/23 12:00
+    - Tag Open: 10/23 12:00
+    - Solve: 10/23 22:12
+
+- 풀이
+    - 깡 시뮬레이션 구현 문제
+    - 주의할점: 한번의 이동에서 합쳐진 블록은 또 합쳐질 수 없음 -> bool형 배열로 처리
+  
 - 회고
-    - for문 범위 확인하기 정도? 주의하기
+    - 실 풀이시간 약 100분
+    - 설계시 주의해야 할 사항을 한번 더 확인하자. (요구 조건 확인)
+
+- 코드
+  - ```cpp
+    #include <iostream>
+    #include <vector>
+    
+    using namespace std;
+    
+    int N;
+    const vector <pair <int, int>> offset{{0,-1}, {0,1}, {-1,0}, {1,0}};    // left, right, up, down 순
+    
+    int findMaxValue(vector <vector <int>> &board) {
+        int result = 0;
+    
+        for (auto &row : board) {
+            for (auto &el : row) {
+                result = max(result, el);
+            }
+        }
+        return result;
+    }
+    
+    bool checkCorrectLoc(int r, int c) {
+        return 0 <= r && r < N && 0 <= c && c < N;
+    }
+    
+    void move(vector <vector <int>> &board, vector <vector <bool>> &isAdd, int curR, int curC, int direction) { // 완
+        int setR = offset[direction].first;
+        int setC = offset[direction].second;
+    
+        while (checkCorrectLoc(curR + setR, curC + setC)) {
+            int nxtR = curR + setR;
+            int nxtC = curC + setC;
+            
+            if (board[nxtR][nxtC] == 0) {
+                swap(board[nxtR][nxtC], board[curR][curC]);
+            } else {
+                if (board[nxtR][nxtC] == board[curR][curC] && !isAdd[nxtR][nxtC]) {
+                    isAdd[nxtR][nxtC] = true;
+                    board[nxtR][nxtC] *= 2;
+                    board[curR][curC] = 0;
+                }
+                break;
+            }
+    
+            curR = nxtR;
+            curC = nxtC;
+        }
+    }
+    
+    vector <vector <int>> tilt(vector <vector <int>> &board, int direction) {    // 완
+        auto newBoard = board;
+        vector <vector <bool>> isAdd(N, vector <bool> (N, false));
+    
+        if (direction == 0) {   // left
+            for (int c = 0; c < N; c++) {
+                for (int r = 0; r < N; r++) {
+                    if (newBoard[r][c] == 0) continue;
+                    move(newBoard, isAdd, r, c, direction);
+                }
+            }
+        } else if (direction == 1) {    // right
+            for (int c = N-1; c > -1; c--) {
+                for (int r = N-1; r > -1; r--) {
+                    if (newBoard[r][c] == 0) continue;
+                    move(newBoard, isAdd, r, c, direction);
+                }
+            }
+        } else if (direction == 2) {    // up
+            for (int r = 0; r < N; r++) {
+                for (int c = 0; c < N; c++) {
+                    if (newBoard[r][c] == 0) continue;
+                    move(newBoard, isAdd, r, c, direction);
+                }
+            }
+        } else {    // down
+            for (int r = N-1; r > -1; r--) {
+                for (int c = N-1; c > -1; c--) {
+                    if (newBoard[r][c] == 0) continue;
+                    move(newBoard, isAdd, r, c, direction);
+                }
+            }
+        }
+    
+        return newBoard;
+    }
+    
+    int backtracking(vector <vector <int>> &board, int cnt) {   // 완
+        if (cnt == 0) return findMaxValue(board);
+    
+        int ans = 0;
+        for (int i = 0; i < 4; i++) {
+            auto newBoard = tilt(board, i);
+            ans = max(ans, backtracking(newBoard, cnt - 1));
+        }
+        return ans;
+    }
+    
+    int main() {    // 완
+        // fastIO
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL); cout.tie(NULL);
+    
+        // init && input
+        cin >> N;
+    
+        vector <vector <int>> board(N, vector <int> (N));
+        for (auto &row : board) {
+            for (auto &el : row) {
+                cin >> el;
+            }
+        }
+    
+        // solve
+        cout << backtracking(board, 5);
+        return 0;
+    }
+      ```
 
 </details>
 
@@ -190,4 +336,5 @@
 - 종만북 Ch08 (DP)
 
 ## 특이사항
-- 요즘 왤케 문제 풀기가 귀찮지..
+- 구현력부족, 능지부족, 귀차니즘 삼위일체로 벽을 느끼고 있는중
+- 템플릿에 코드 부분 추가
