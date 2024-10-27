@@ -328,6 +328,86 @@
 
 </details>
 
+### [BOJ 20208 - 진우의 민트초코우유](https://www.acmicpc.net/problem/20208)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅤ
+    - Tag: backtracking
+
+- 타임라인
+    - Problem Open: --/-- --:--
+    - Tag Open: --/-- --:--
+    - Solve: 10/27 22:12
+
+- 풀이
+    - 민트초코위치와 시작위치를 pair <int, int>에 저장하여 백트래킹
+    - 거리 = 현재 위치 - 목표 민트초코우유 위치
+  
+- 회고
+    - 무작정 다 구현하려고 하지 말고, 시간복잡도를 줄일 수 있는 방법이 있을까 한번쯤은 고민하자.
+ 
+- 코드
+  - ```cpp
+    #include <iostream>
+    #include <vector>
+    
+    using namespace std;
+    
+    int N, M, H;
+    vector <bool> visited;
+    vector <pair <int, int>> milks;
+    pair <int, int> startCoord;
+    
+    int backtracking(int hp, pair <int, int> &curCoord) {
+        int result = -100;
+        if (abs(startCoord.first - curCoord.first) + abs(startCoord.second - curCoord.second) <= hp) {
+            result = 0;
+        }
+    
+        for (int i = 0; i < int(milks.size()); i++) {
+            int dist = abs(curCoord.first - milks[i].first) + abs(curCoord.second - milks[i].second);
+            if (dist > hp || visited[i]) continue;
+            
+            visited[i] = true;
+            result = max(result, backtracking(hp - dist + H, milks[i]) + 1);
+            visited[i] = false;
+        }
+    
+        return result;
+    }
+    
+    int main() {
+        // fastIO
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL); cout.tie(NULL);
+    
+        // init && input
+        cin >> N >> M >> H;
+    
+        int temp;
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                cin >> temp;
+                if (temp == 1) {
+                    startCoord = {i,j};
+                } else if (temp == 2) {
+                    milks.push_back({i,j});
+                    visited.push_back(false);
+                }
+            }
+        }
+    
+        cout << backtracking(M, startCoord);
+    
+        // solve
+        return 0;
+    }
+    ```
+    
+</details>
+
 ## 시도하였지만 풀지 못한 문제
 
 ### [BOJ 1111 - IQ Test](https://www.acmicpc.net/problem/1111)
@@ -349,6 +429,7 @@
 - 종만북 Ch05 ~ Ch07 (알고리즘의 정당성 증명 방법, 브루트포스, 분할정복)
 
 ## 다음주 목표
+- 귀차니즘 극복하기
 - 분할정복 위주로 내실 쌓기
 - 종만북 Ch08 (DP)
 
