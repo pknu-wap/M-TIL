@@ -7,7 +7,7 @@
 | [3주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week03.md) | 24.10.07 ~ 24.10.13 | - | - |
 | [4주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week04.md) | 24.10.14 ~ 24.10.20 | solved.ac Class5 | - |
 | [5주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week05.md) | 24.10.21 ~ 24.10.27 | 브루트포스(bruteforcing) & 구현(implementation) | - |
-
+| [6주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week06.md) | 24.10.28 ~ 24.11.03 | 분할정복(divide_and_conquer) & 동적계획법(DP) | - |
 
 
 ## 목표
@@ -25,4 +25,5 @@
 24.10.13 Week03 update
 24.10.20 Week04 update
 24.10.27 Week05 update
+24.11.03 Week06 update
 ```
