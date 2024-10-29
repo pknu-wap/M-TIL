@@ -17,8 +17,8 @@
     - Solve: 10/29 22:11
 
 - 풀이
-    - $layer[N] = N레벨 버거의 레이어 = layer[N - 1] \cdot 2 + 3$
-    - $patty[N] = N레벨 버거의 패티 개수 = patty[N - 1] \cdot 2 + 1$
+    - $layer[N] = N$레벨 버거의 레이어 $= layer[N - 1] \cdot 2 + 3$
+    - $patty[N] = N$레벨 버거의 패티 개수 $= patty[N - 1] \cdot 2 + 1$
     - 메모이제이션한 두 배열을 바탕으로 분할정복으로 해결
 
 - 회고
