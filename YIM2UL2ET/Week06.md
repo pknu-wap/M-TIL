@@ -70,6 +70,60 @@
 
 </details>
 
+### [BOJ 5904 - Moo 게임](https://www.acmicpc.net/problem/5904)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅤ
+    - Tag: divide_and_conquer
+
+- 타임라인
+    - Problem Open: 10/30 12:00?
+    - Tag Open: 10/30 12:00?
+    - Solve: 10/30 12:38
+
+- 풀이
+    - $memo[i] = i - 1$레벨의 수열 길이 = $memo[i - 1] \cdot 2 + i + 2$
+    - 이를 사용하여 분할정복
+
+- 회고
+    - 생각은 되는데 구현이 안됨..
+ 
+- 코드
+  - ```cpp
+    #include <iostream>
+    #include <vector>
+    
+    using namespace std;
+    
+    vector <long long> memo;
+    
+    char recursive(int Lv, int n) {
+        if (memo[Lv - 1] < n && n < memo[Lv - 1] + Lv + 3) {
+            if (n == memo[Lv - 1] + 1) return 'm';
+            else return 'o';
+        }
+    
+        return recursive(Lv - 1, memo[Lv - 1] < n ? n - memo[Lv - 1] - Lv - 2 : n);
+    }
+    
+    int main() {
+        int i, n;
+        cin >> n;
+    
+        memo.push_back(0);
+        for (i = 1; memo[i - 1] <= 1e9; i++) {
+            memo.push_back(memo[i - 1] * 2 + i + 2);
+        }
+    
+        cout << recursive(i - 1, n);
+        return 0;
+    }
+    ```
+
+</details>
+
 ## 공부한 내용
 - 종만북 Ch08 (DP)
 - 분할정복, 동적계획법 문제풀이 연습
