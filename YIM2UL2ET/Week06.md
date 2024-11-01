@@ -124,6 +124,86 @@
 
 </details>
 
+### [BOJ 21870 - 시철이가 사랑한 GCD](https://www.acmicpc.net/problem/21870)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅤ
+    - Tag: divide_and_conquer
+
+- 타임라인
+    - Problem Open: 10/31 12:00?
+    - Tag Open: 10/31 12:00?
+    - Solve: 11/01 12:22
+
+- 풀이
+    - 분할정복과 유클리드 호제법만 안다면 간단히 풀 수 있는 문제
+
+- 회고
+    - 40분동안 문제 자체를 이해하는데에 사용함 (능지처참)
+    - 범위 지정을 어떻게 해야 할지 너무 헷깔림
+    - 전에 헷깔렸던 [이분 탐색 범위 지정 방식](https://jun-codinghistory.tistory.com/154)을 정리한게 있길래 가져와봄
+ 
+- 코드
+  - ```cpp
+    #include <iostream>
+    #include <vector>
+    
+    using namespace std;
+    
+    vector <int> seq; 
+    
+    int gcd(int a, int b) {
+        if (a < b) swap(a, b);
+        while (b != 0) {
+            int temp = a;
+            a = b;
+            b = temp % a;
+        }
+        return a;
+    }
+    
+    int getSeqGcd(int left, int right) {
+        int result = seq[left];
+        for (int i = left + 1; i <= right; i++) {
+            result = gcd(result, seq[i]);
+        }
+        return result;
+    }
+    
+    int divide(int left, int right) {
+        if (left == right) return seq[left];
+        
+        int mid = (right - left + 1) / 2 + left;
+    
+        int chsLeft = divide(left, mid - 1) + getSeqGcd(mid, right);
+        int chsRight = divide(mid, right) + getSeqGcd(left, mid - 1);
+        return max(chsLeft, chsRight);
+    }
+    
+    int main() {
+        // fastIO
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL); cout.tie(NULL);
+    
+        // init && input
+        int N;
+        cin >> N;
+    
+        seq.resize(N + 1);
+        for (int i = 1; i <= N; i++) {
+            cin >> seq[i];
+        }
+    
+        // solve
+        cout << divide(1, N);
+        return 0;
+    }
+    ```
+
+</details>
+
 ## 공부한 내용
 - 종만북 Ch08 (DP)
 - 분할정복, 동적계획법 문제풀이 연습
