@@ -8,12 +8,13 @@
 | [4주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week04.md) | 24.10.14 ~ 24.10.20 | solved.ac Class5 | - |
 | [5주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week05.md) | 24.10.21 ~ 24.10.27 | 브루트포스(bruteforcing) & 구현(implementation) | - |
 | [6주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week06.md) | 24.10.28 ~ 24.11.03 | 분할정복(divide_and_conquer) & 동적계획법(DP) | - |
+| [7주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week07.md) | 24.11.04 ~ 24.11.10 | 동적계획법(DP) | - |
 
 
 ## 목표
 - 1Day 1Solve
 - LaTeX 공부
-- 2주에 적어도 한 번씩 블로그에 글 올리기
+- 블로그에 글 많이 올리기
 - 알고리즘 문제 해결 전략, CLRS 1회 정독하기
 - **모르는게 있으면 붙잡지 말기 (시간 효율적으로 사용하기)**
 
