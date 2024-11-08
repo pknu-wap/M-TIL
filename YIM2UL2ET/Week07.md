@@ -109,6 +109,74 @@
 
 </details>
 
+### [BOJ 24395 - 명진이의 신년계획](https://www.acmicpc.net/problem/24395)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅠ
+    - Tag: DP
+
+- 타임라인
+    - Problem Open: 11/08 11:44
+    - Tag Open: 11/08 11:44 (DP)
+    - Solve: 11/08 12:12
+
+- 풀이
+    - $memo[i][j] =$ 사각형의 길이가 $i$, 높이가 $j$일때 최소 손실값
+    - 코드 참조
+
+- 회고
+    - 태그 알고 하니 그냥 바로 풀리는 문제..
+    - DP인거 모르고 했어도 바로 풀렸을까..?
+ 
+- 코드
+  - ```cpp
+    #include <iostream>
+    #include <vector>
+    
+    using namespace std;
+    
+    struct square { int w, h; };
+    
+    int W, H, N;
+    vector <square> vec;
+    vector <vector <int>> memo;
+    
+    int cutSq (int w, int h) {
+        if (memo[w][h] != -1) return memo[w][h];
+    
+        memo[w][h] = (w != 0 && h != 0 ? w * h : 0);
+        for (auto &sq : vec) {
+            if (sq.w > w || sq.h > h) continue;
+            memo[w][h] = min(memo[w][h], min(cutSq(w - sq.w, sq.h) + cutSq(w, h - sq.h), cutSq(sq.w, h - sq.h) + cutSq(w - sq.w, h)));
+        }
+        return memo[w][h];
+    }
+    
+    int main() {
+        // fastIO
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL); cout.tie(NULL);
+        
+        // init && input
+        cin >> W >> H >> N;
+    
+        memo.resize(W + 1, vector <int> (H + 1, -1));
+        vec.resize(N);
+    
+        for (auto &sq : vec) {
+            cin >> sq.w >> sq.h;
+        }
+    
+        // solve
+        cout << cutSq(W, H);
+        return 0;
+    }
+    ```
+
+</details>
+
 ## 공부한 내용
 - 독서 위주로 공부
 
