@@ -109,7 +109,7 @@
 
 </details>
 
-### [BOJ 24395 - 명진이의 신년계획](https://www.acmicpc.net/problem/24395)
+### [BOJ 1691 - 석판](https://www.acmicpc.net/problem/1691)
 <details>
 <summary>보기</summary> 
 
