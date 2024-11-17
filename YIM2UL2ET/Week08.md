@@ -269,12 +269,155 @@
 
 </details>
 
+</details>
+
+### [BOJ 13168 - 내일로 여행](https://www.acmicpc.net/problem/13168)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅢ
+    - Tag: hash_map, floyd_warshall, implemention
+
+- 타임라인
+    - Problem Open: 11/17 16:30?
+    - Tag Open: --/-- --:--
+    - Solve: 11/17 19:34
+
+- 풀이
+    - 해시맵, 플로이드 워셜 사용하여 구현
+
+- 회고
+    - 실 풀이 약 1시간 반?
+    - 연습 안하니깐 구현 & 디버깅 능력이 확 떨어지네
+ 
+- 코드
+  - ```cpp
+    #include <iostream>
+    #include <unordered_set>
+    #include <unordered_map>
+    #include <vector>
+    
+    #define INF 1e9 * 2
+    
+    using namespace std;
+    
+    struct transport{
+        string type;
+        int start, end, cost;
+    };
+    
+    int N, M, R, K;
+    vector <int> path;
+    vector <transport> graph;
+    
+    pair <long long, long long> getCost() {
+        // 내일로 Tickets Init
+        unordered_set <string> freeTicket{"Mugunghwa", "ITX-Cheongchun", "ITX-Saemaeul"};
+        unordered_set <string> discountTicket{"S-Train", "V-Train"};
+    
+        // init cache
+        vector <vector <long long>> dist1(N, vector <long long> (N, INF));    // 내일로 X
+        vector <vector <long long>> dist2(N, vector <long long> (N, INF));    // 내일로 O
+    
+        for (int i = 0; i < N; i++) {
+            dist1[i][i] = 0;
+            dist2[i][i] = 0;
+        }
+    
+        for (auto &e : graph) {
+            dist1[e.start][e.end] = min(dist1[e.start][e.end], (long long)e.cost * 2);
+    
+            if (freeTicket.find(e.type) != freeTicket.end()) {
+                dist2[e.start][e.end] = min(dist2[e.start][e.end], (long long)0);
+            } else if (discountTicket.find(e.type) != discountTicket.end()) {
+                dist2[e.start][e.end] = min(dist2[e.start][e.end], (long long)e.cost);
+            } else {
+                dist2[e.start][e.end] = min(dist2[e.start][e.end], (long long)e.cost * 2);
+            }
+        }
+    
+        // floyd
+        for (int mid = 0; mid < N; mid++) {
+            for (int start = 0; start < N; start++) {
+                for (int end = 0; end < N; end++) {
+                    dist1[start][end] = min(dist1[start][end], dist1[start][mid] + dist1[mid][end]);
+                    dist2[start][end] = min(dist2[start][end], dist2[start][mid] + dist2[mid][end]);
+                }
+            }
+        }
+    
+        // find totalCost
+        long long result1 = 0, result2 = R * 2;
+        for (int i = 1; i < M; i++) {
+            result1 += dist1[path[i - 1]][path[i]];
+            result2 += dist2[path[i - 1]][path[i]];
+        }
+        
+        // return
+        return {result1, result2};
+    }
+    
+    void input() {
+        // N, R input
+        cin >> N >> R;
+        
+        // hash setting
+        string str;
+        unordered_map <string, int> stationHash;
+        for (int i = 0; i < N; i++) {
+            cin >> str;
+            stationHash.insert({str, i});
+        }
+        
+        // path input
+        cin >> M;
+        path.resize(M);
+        for (auto &p : path) {
+            cin >> str;
+            p = stationHash[str];
+        }
+    
+        // ticket input
+        cin >> K;
+        int cost;
+        string type, start, end;
+        for (int i = 0; i < K; i++) {
+            cin >> type >> start >> end >> cost;
+            graph.push_back({type, stationHash[start], stationHash[end], cost});
+            graph.push_back({type, stationHash[end], stationHash[start], cost});
+        }
+    }
+    
+    int main() {
+        // fastIO
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL); cout.tie(NULL);
+    
+        // init && input
+        input();
+    
+        // solve
+        auto ans = getCost();
+        if (ans.first > ans.second) {
+            cout << "Yes";
+        } else {
+            cout << "No";
+        }
+        
+        return 0;
+    }
+    ```
+
+</details>
+
 ## 공부한 내용
-- 공부해라
+- 아무것도 한게 엄서요.. 흑흑.. (책 깔짝깔짝 읽기)
 
 ## 다음주 목표
-- 블로그 글 올리기
-- 실버스트릭
+- DP 마무리 + 정리글 올리기
+- 실버스트릭 잇기
 
 ## 특이사항
 - 시간이 너무 잘간다..
+- 드디어 태블릿 인가받음
