@@ -10,7 +10,7 @@
 | [6주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week06.md) | 24.10.28 ~ 24.11.03 | 분할정복(divide_and_conquer) & 동적계획법(DP) | - |
 | [7주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week07.md) | 24.11.04 ~ 24.11.10 | 동적계획법(DP) | - |
 | [8주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week08.md) | 24.11.11 ~ 24.11.17 | 동적계획법(DP) & 영어(English) | - |
-| [8주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week09.md) | 24.11.18 ~ 24.11.24 | 동적계획법(DP) & 그리디(Greedy) | - |
+| [9주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week09.md) | 24.11.18 ~ 24.11.24 | 동적계획법(DP) & 그리디(Greedy) | - |
 
 
 ## 목표
