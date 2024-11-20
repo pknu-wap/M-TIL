@@ -138,6 +138,90 @@
 
 </details>
 
+### [BOJ 1646 - 피이보나치 트리](https://www.acmicpc.net/problem/1646)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅠ
+    - Tag: DP
+
+- 타임라인
+    - Problem Open: 11/20 12:00
+    - Tag Open: 11/20 12:00
+    - Solve: 11/20 20:06
+
+- 풀이
+    - $memo[i] = memo[i - 1] + memo[i - 2] + 1 = i$레벨에서의 노드 수 $(i \ge 2)$
+    - $i < 2$일 경우 $1$개의 노드만 존재하므로 $memo[0] = memo[1] = 1$
+    - 함수 $order(Lv, root, target) = $ 루트노드가 root인 Lv레벨 피이보나치 트리에서 target노드까지 가는 방법
+    - 1. $memo$ 점화식을 사용하여 50까지 초기화 시킴
+      2. start노드와 end노드를 사용하여 $order(N, 1, start), order(N, 1, end)$ 시켜 최상단 노드에서 가는 방법을 찾음
+      3. 2번의 두 string을 사용하여 최하위 공통 조상노드를 찾음
+      4. answer = (start노드에서 해당 조상노드까지의 거리) * 'U' + (해당 조상노드에서 end노드까지 가는 방법)
+
+- 회고
+    - [start노드에서 end노드까지 직접 가는 방식을 찾으려고 하다 실패한 코드](https://www.acmicpc.net/source/86659834)
+    - 종교활동 참석하는데 해당 방법이 딱 생각나서 갔다온 후 바로 구현하여 AC (쾌감 미쳤다)
+ 
+- 코드
+  - ```cpp
+    #include <iostream>
+    #include <vector>
+    
+    typedef long long LL;
+    
+    using namespace std;
+    
+    int N;
+    LL start, target;
+    vector <LL> treeEA;
+    
+    void initTreeEA() {
+        treeEA.resize(N + 1);
+        treeEA[0] = treeEA[1] = 1;
+        for (int i = 2; i <= N; i++) {
+            treeEA[i] = treeEA[i - 1] + treeEA[i - 2] + 1;
+        }
+    }
+    
+    string order(int lv, LL cur, LL target) {
+        if (cur == target) return "";
+        
+        if (cur + treeEA[lv - 2] < target) { // R
+            return "R" + order(lv - 1, cur + treeEA[lv - 2] + 1, target);
+        } else {    // L
+            return "L" + order(lv - 2, cur + 1, target);
+        }
+    }
+    
+    int main() {
+        cin >> N >> start >> target;
+    
+        initTreeEA();
+        string rootToStart = order(N, 1, start);
+        string rootToEnd = order(N, 1, target);
+    
+        int idx = 0;
+        while (idx != int(rootToStart.size()) && idx != int(rootToEnd.size())) {
+            if (rootToStart[idx] != rootToEnd[idx]) {
+                break;
+            } else {
+                idx++;
+            }
+        }
+    
+        for (int i = 0; i < rootToStart.size() - idx; i++) {
+            cout << 'U';
+        }
+        cout  << rootToEnd.substr(idx);
+    
+        return 0;
+    }
+    ```
+
+</details>
+
 ## 공부한 내용
 - 뭘 했을까
 
