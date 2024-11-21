@@ -222,6 +222,96 @@
 
 </details>
 
+### [BOJ 30023 - 전구 상태 바꾸기](https://www.acmicpc.net/problem/30023)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅤ
+    - Tag: Greedy
+
+- 타임라인
+    - Problem Open: 11/21 12:00
+    - Tag Open: 11/21 12:00
+    - Solve: 11/21 12:58
+
+- 풀이
+    - $mod$ 연산자를 사용하여 전구의 색을 변경
+    - $setColor() = lamps$를 $idx$위치부터 끝까지 $color$색으로 바꾸는 데에 필요한 색 변경 횟수
+    - 작동 방식: $lamps[idx]$을 최소 변경 횟수로 $color$으로 바꾼 후 $idx+1$번째부터 끝까지 $color$색으로 변경 $(0 \le idx \le N-3)$
+    - 0번째 색을 바꾸는 방법은 0 ~ 2번째 색을 바꾸는 방법밖에 없으므로 해당 방식대로 바꾸고, 1번째 색도 이러한 방식으로 1 ~ 3번째 색(0 ~ 2번째 색 변경법은 이미 썻으므로 X)을 변경하고..
+    - 이러한 방식으로 0 ~ N-3번째 색을 일괄적으로 같게 변경 후, N-3 ~ N-1번째 색이 같으면 변경 가능, 다르면 변경 불가능 하다는 뜻이다.
+    - 만약 0번째부터 색을 바꾸지 않았다면 0번째 색이 바뀔 때 1 ~ 2번째 색, 그 색을 바꾸려고 할 때 그 이상의 위치의 색이 바뀌기 때문에 0번째부터 바꿀 때 보다 횟수가 크거나, 같을 수밖에 없다.
+
+- 회고
+    - 탐욕적 선택 속성 증명 연습
+    - 증명이 너무 어렵네용..
+ 
+- 코드
+  - ```cpp
+    #include <iostream>
+    #include <vector>
+    
+    using namespace std;
+    
+    int N;
+    
+    int setColor(vector <int> &lamps, int idx, int color) {
+        if (idx + 2 == N) {
+            if (lamps[idx - 1] == lamps[idx] && lamps[idx] == lamps[idx + 1]) {
+                return 0;
+            } else {
+                return -1;
+            }
+        }
+    
+        int setNum, result;
+    
+        setNum = (color + 3 - lamps[idx]) % 3;  // c = (lamp + x) % 3
+        for (int i = 0; i < 3; i++) {
+            lamps[idx + i] = (lamps[idx + i] + setNum) % 3;
+        }
+    
+        result = setColor(lamps, idx + 1, color);
+        for (int i = 0; i < 3; i++) {
+            lamps[idx + i] = (lamps[idx + i] - setNum + 3) % 3;
+        }
+    
+        return (result != -1 ? result + setNum : -1);
+    }
+    
+    int main() {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL); cout.tie(NULL);
+    
+        cin >> N;
+        vector <int> lamps(N);
+    
+        string str;
+        cin >> str;
+        for (int i = 0; i < N; i++) {
+            if (str[i] == 'R') {
+                lamps[i] = 0;
+            } else if (str[i] == 'G') {
+                lamps[i] = 1;
+            } else if (str[i] == 'B') {
+                lamps[i] = 2;
+            }
+        }
+    
+        int ans = 1e9;
+        for (int i = 0; i < 3; i++) {
+            int res = setColor(lamps, 0, i);
+            ans = min(ans, res != -1 ? res : ans);
+        }
+    
+        cout << (ans != 1e9 ? ans : -1);
+        return 0;
+    }
+    ```
+
+</details>
+
 ## 공부한 내용
 - 뭘 했을까
 
