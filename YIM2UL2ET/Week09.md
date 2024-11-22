@@ -74,12 +74,25 @@
 
 - 풀이
     - 분할정복을 활용한 행렬의 거듭제곱 기법을 사용하는 DP 연습 문제
-    - [참조](https://driip.me/00556a4c-0782-4c5b-a86a-8e27e5f4ac1b)
+    - 기본적인 피보나치 점화식인 $DP[i+2] = DP[i+1] + DP[i] (i \ge 0)$를 행렬로 변환
+    - <img src="http://latex.codecogs.com/png.latex?\dpi{110}\bg_white 
+          \begin{bmatrix} 
+          0 & 1 \\ 1 & 1
+          \end{bmatrix}
+          \cdot
+          \begin{bmatrix} 
+          DP[i] \\ DP[i+1]
+          \end{bmatrix}
+          =
+          \begin{bmatrix} 
+          DP[i+1] \\ DP[i+2]
+          \end{bmatrix}
+          (i \ge 0)
+          "/>
 
 - 회고
     - 구현시간 약 1시간?
     - 기초적인 실수 조심 (n을 int형으로 받으려고 시도함)
-    - 이거 왜 LaTex 행렬이 안되지?
  
 - 코드
   - ```cpp
@@ -306,6 +319,149 @@
         }
     
         cout << (ans != 1e9 ? ans : -1);
+        return 0;
+    }
+    ```
+
+</details>
+
+### [BOJ 16467 - 병아리의 변신은 무죄](https://www.acmicpc.net/problem/16467)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅠ
+    - Tag: DP
+
+- 타임라인
+    - Problem Open: 11/21 22:15
+    - Tag Open: 11/21 22:15
+    - Solve: 11/22 08:03
+
+- 풀이
+    - $DP[i] = i$번째 날에 존재하는 병아리의 수 $= DP[i - 1] + DP[i - 1 - K]$
+    - <img src="http://latex.codecogs.com/png.latex?\dpi{110}\bg_white 
+          ex) 
+          \begin{bmatrix} 
+          0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+          0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+          0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+          0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+          0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\ 
+          0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\ 
+          0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 \\ 
+          0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\ 
+          0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 \\ 
+          0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\ 
+          0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 1 \\ 
+          \end{bmatrix}
+          \cdot
+          \begin{bmatrix} 
+          DP[i] \\ DP[i+1] \\ DP[i+2] \\ DP[i+3] \\ DP[i+4] \\ DP[i+5] \\ DP[i+6] \\ DP[i+7] \\ DP[i+8] \\ DP[i+9] \\ DP[i+10] \end{bmatrix} 
+          =
+          \begin{bmatrix} 
+          DP[i+1] \\ DP[i+2] \\ DP[i+3] \\ DP[i+4] \\ DP[i+5] \\ DP[i+6] \\ DP[i+7] \\ DP[i+8] \\ DP[i+9] \\ DP[i+10] \\ DP[i+11] \end{bmatrix}
+          (K = 2, i \ge 0)
+          "/>
+     - 이를 일반화 하여 첫번째 행렬을 $W$, 두번째 행렬을 $V$라고 했을 때 $W^{N-10} \cdot V (N \ge 11)$를 하여 DP[N]을 구할 수 있음.
+     - 물론 $W$는 $W[j][j+1] = 1 (0 \le j \le 10)$, 나머지를 $0$으로 설정 후 $W[10][10 - K]$에 1을 더하여 init
+
+- 회고
+    - 행렬의 거듭제곱을 활용한 DP 연습
+    - 식을 잘 세워두고 구현하도록 (머릿속으로 생각하지 말고 적으면서 하기)
+ 
+- 코드
+  - ```cpp
+    #include <iostream>
+    #include <vector>
+    
+    #define MOD 100000007
+    
+    using namespace std;
+    
+    void initW(vector <vector <long long>> &W, int K) {
+        W.resize(11, vector <long long> (11, 0));
+        
+        for (int i = 0; i < 10; i++) {
+            W[i][i + 1] += 1;
+        }
+        
+        W.back().back() += 1; 
+        W.back()[10 - K] += 1;
+    }
+    
+    void initV(vector <vector <long long>> &V, int K) { 
+        V.resize(11, vector <long long> (1));
+    
+        V[0][0] = 1;
+        for (int i = 1; i <= 10; i++) {
+            if (i - K > 0) {
+                V[i][0] = V[i - 1][0] + V[i - K - 1][0];
+            } else {
+                V[i][0] = V[i - 1][0];
+            }
+        }
+    }
+    
+    vector <vector <long long>> mulMatrix(vector <vector <long long>> &W1, vector <vector <long long>> &W2) {
+        int N = W1.size(), M = W2.back().size(), K = W2.size();
+        vector <vector <long long>> result(N, vector <long long> (M));
+    
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < M; j++) {
+                for (int k = 0; k < K; k++) {
+                    result[i][j] += ((W1[i][k] % MOD) * (W2[k][j] % MOD)) % MOD;
+                    result[i][j] %= MOD;
+                }
+            }
+        }
+        return result;
+    }
+    
+    vector <vector <long long>> powMatrix(int n, vector <vector <long long>> &curMatrix) {
+        if (n == 1) return curMatrix;
+    
+        if (n % 2 == 0) {
+            auto newMatrix = powMatrix(n / 2, curMatrix);
+            return mulMatrix(newMatrix, newMatrix);
+        } else {
+            auto newMatrix = powMatrix(n - 1, curMatrix);
+            return mulMatrix(curMatrix, newMatrix);
+        }
+    }
+    
+    void solve() {
+        // input && init
+        int K, N;
+        cin >> K >> N;
+    
+        vector <vector <long long>> W;
+        vector <vector <long long>> V;
+    
+        initW(W, K);
+        initV(V, K);
+    
+        if (N <= 10) {
+            cout << V[N][0] << '\n';
+        } else {
+            W = powMatrix(N - 10, W);
+            V = mulMatrix(W, V);
+    
+            cout << V.back()[0] << '\n';
+        }
+    }
+    
+    int main() {
+        // fastIO
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL); cout.tie(NULL);
+    
+        // test case
+        int tc;
+        cin >> tc;
+        for (int i = 0; i < tc; i++) {
+            solve();
+        }
         return 0;
     }
     ```
