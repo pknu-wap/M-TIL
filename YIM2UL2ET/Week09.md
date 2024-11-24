@@ -468,12 +468,97 @@
 
 </details>
 
+### [BOJ 12851 - 숨바꼭질 2](https://www.acmicpc.net/problem/12851)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅣ
+    - Tag: BFS
+
+- 타임라인
+    - Problem Open: 11/24 22:15
+    - Tag Open: --/-- --:--
+    - Solve: 11/24 22:39
+
+- 풀이
+    - 전형적인 BFS문제이지만, 2차원 배열이 아닌 1차원 배열에서의 BFS라는 점을 유의해야 함.
+
+- 회고
+    - BFS를 활용한 문제라는 것을 AC를 한 후에 깨달았다.
+    - 쿼리에 추가: 그래프 탐색은 1차원 배열에서도 활용될 수 있다.
+ 
+- 코드
+  - ```cpp
+    #include <iostream>
+    #include <queue>
+    #include <vector>
+    
+    #define limit 1e5
+    
+    using namespace std;
+    
+    int main() {
+        int start, end;
+        cin >> start >> end;
+    
+        vector <int> ea(limit + 1, 0);
+        ea[start] = 1;
+    
+        vector <bool> vst(limit + 1, false);
+    
+        queue <int> nxtIdx;
+        nxtIdx.push(start);
+    
+        int t = 0;
+        while (ea[end] == 0) {
+            queue <int> que;
+            int s = nxtIdx.size();
+    
+            for (int i = 0; i < s; i++) {
+                int nxt = nxtIdx.front();
+                nxtIdx.pop();
+    
+                if (nxt + 1 <= limit && !vst[nxt + 1]) {
+                    que.push(nxt + 1);
+                    nxtIdx.push(nxt + 1);
+                    ea[nxt + 1]++;
+                }
+                if (nxt - 1 >= 0 && !vst[nxt - 1]) {
+                    que.push(nxt - 1);
+                    nxtIdx.push(nxt - 1);
+                    ea[nxt - 1]++;
+                }
+                if (nxt * 2 <= limit && !vst[nxt * 2]) {
+                    que.push(nxt * 2);
+                    nxtIdx.push(nxt * 2);
+                    ea[nxt * 2]++;
+                }
+            }
+    
+            while (!que.empty()) {
+                vst[que.front()] = true;
+                que.pop();
+            }
+    
+            t++;
+        }
+    
+        cout << t << '\n' << ea[end];
+        return 0;
+    }
+    ```
+
+</details>
+
 ## 공부한 내용
-- 뭘 했을까
+- 종만북 Ch10 (탐욕법)
+- LaTex 문법 공부
 
 ## 다음주 목표
-- 뭘 해야할까
+- 휴가 전까지 골드스트릭 잇기
+- 종만북 Ch11 (조합탐색)
 
 ## 특이사항
-- 23일 단체외출
-- 요즘 그림그리는게 너무 재밌네요
+- 23일 생활관 단체 외출
+- 그림 그리는 것이 너무나 재밌음.
