@@ -171,4 +171,21 @@ fn main() {
 C와 달리 char과 정수는 호환이 되지 않으므로 **as u8 *(unsigned 8비트 정수)*** 을 통해 강제로 형 변환을 해야한다.  
 **return result;** 대신 **result**로 표현할 수 있다.  
 처음에는 이게 단순히 return과 ;를 생략한 syntactic sugar인 줄 알았는데,  
-이것을 응용해서 `let var = if condition_a {var_a} else {var_b}` 처럼 삼항 연산자로 사용하는 등의 활용이 가능하다는 것을 알았다.
+이것을 응용해서 `let var = if condition_a {var_a} else {var_b}` 처럼 삼항 연산자로 사용하는 등의 활용이 가능하다는 것을 알았다.  
+<br>
+
+러스트는 파이썬의 람다 함수와 비슷하게, 익명 함수를 사용할 수 있다.  
+이를 클로저라 한다.
+
+**let *closure_name* = |*parameter*| definition;**  
+<br>
+
+```Rust
+fn encrypt(text: String) -> String {
+    let is_alpha = |ch| 'A' <= ch && ch <= 'Z';
+    let convert = |ch| ((ch as u8 - 'A' as u8 + 26 + 3) % 26 + 'A' as u8) as char;
+    let encrypt_char = |ch| if is_alpha(ch) {convert(ch)} else {ch};
+    text.chars().map(|ch| encrypt_char(ch)).collect()
+}
+```
+클로저를 사용하여 시저 암호를 더욱 간편하게 구현할 수 있다.
