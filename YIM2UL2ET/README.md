@@ -2,7 +2,7 @@
 
 | 주차 | 날짜 | 주제 | 링크 |
 |--|--|--|--|
-| [1주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week01.md) | 24.09.23 ~ 24.09.29 | 풀이 연습 & 매개 변수 탐색 (parametric search) | [Parametric Search](https://yim2ul2et.github.io/posts/%EC%9D%B4%EB%B6%84%ED%83%90%EC%83%89%EA%B3%BC-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%ED%83%90%EC%83%89/) |
+| [1주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week01.md) | 24.09.23 ~ 24.09.29 | 풀이 연습 & 매개 변수 탐색 (Parametric Search) | [Parametric Search](https://yim2ul2et.github.io/posts/%EC%9D%B4%EB%B6%84%ED%83%90%EC%83%89%EA%B3%BC-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%ED%83%90%EC%83%89/) |
 | [2주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week02.md) | 24.09.30 ~ 24.10.06 | 풀이 연습 | - |
 | [3주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week03.md) | 24.10.07 ~ 24.10.13 | 풀이 연습 | - |
 | [4주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week04.md) | 24.10.14 ~ 24.10.20 | 풀이 연습 & CLASS 5 획득 | - |
@@ -10,7 +10,8 @@
 | [6주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week06.md) | 24.10.28 ~ 24.11.03 | 분할정복(divide_and_conquer) & 동적계획법(DP) | - |
 | [7주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week07.md) | 24.11.04 ~ 24.11.10 | 동적계획법(DP) | [DP](https://yim2ul2et.github.io/posts/%EB%8F%99%EC%A0%81%EA%B3%84%ED%9A%8D%EB%B2%95/) |
 | [8주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week08.md) | 24.11.11 ~ 24.11.17 | 동적계획법(DP) & 영어(English) | - |
-| [9주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week09.md) | 24.11.18 ~ 24.11.24 | 동적계획법(DP) & 탐욕법(Greedy) | [Greedy](https://yim2ul2et.github.io/) |
+| [9주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week09.md) | 24.11.18 ~ 24.11.24 | 동적계획법(DP) & 탐욕법(Greedy) | [Greedy](https://yim2ul2et.github.io/posts/%EA%B7%B8%EB%A6%AC%EB%94%94/) |
+| [10주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week10.md) | 24.11.25 ~ 24.12.01 | 조합탐색(Combinatorial Search) | - |
 
 
 ## 목표
@@ -32,4 +33,5 @@
 24.11.10 Week07 update
 24.11.17 Week08 update
 24.11.24 Week09 update
+24.12.01 Week10 update
 ```
