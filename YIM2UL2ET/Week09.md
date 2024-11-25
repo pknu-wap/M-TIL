@@ -167,11 +167,11 @@
 - 풀이
     - $memo[i] = memo[i - 1] + memo[i - 2] + 1 = i$레벨에서의 노드 수 $(i \ge 2)$
     - $i < 2$일 경우 $1$개의 노드만 존재하므로 $memo[0] = memo[1] = 1$
-    - 함수 $order(Lv, root, target) = $ 루트노드가 root인 Lv레벨 피이보나치 트리에서 target노드까지 가는 방법
+    - 함수 $order(Lv, root, target) =$ 루트노드가 $root$인 $Lv$레벨 피이보나치 트리에서 $target$노드까지 가는 방법
     - 1. $memo$ 점화식을 사용하여 50까지 초기화 시킴
-      2. start노드와 end노드를 사용하여 $order(N, 1, start), order(N, 1, end)$ 시켜 최상단 노드에서 가는 방법을 찾음
+      2. $start$노드와 $end$노드를 사용하여 $order(N, 1, start), order(N, 1, end)$ 시켜 최상단 노드에서 가는 방법을 찾음
       3. 2번의 두 string을 사용하여 최하위 공통 조상노드를 찾음
-      4. answer = (start노드에서 해당 조상노드까지의 거리) * 'U' + (해당 조상노드에서 end노드까지 가는 방법)
+      4. $answer = (start$노드에서 해당 조상노드까지의 거리 $) \cdot$ 'U' $+ ($ 해당 조상노드에서 $end$노드까지 가는 방법 $)$
 
 - 회고
     - [start노드에서 end노드까지 직접 가는 방식을 찾으려고 하다 실패한 코드](https://www.acmicpc.net/source/86659834)
