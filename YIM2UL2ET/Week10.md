@@ -363,6 +363,80 @@
 
 </details>
 
+### [BOJ 1062 - 가르침](https://www.acmicpc.net/problem/1062)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅣ
+    - Tag: Backtracking
+
+- 타임라인
+    - Problem Open: 11/27 23:30?
+    - Tag Open: --/-- --:--
+    - Solve: 11/27 07:36
+
+- 풀이
+    - 비트마스킹 활용한 백트래킹
+    - $i$번째 알파벳을 가르친 여부를 $i$번째 비트에 저장
+    - $and$ 연산으로 알파벳을 완성할 수 있는지 여부 확인하여 이에 대한 $max$값을 찾기
+    - $K \le 4$일때는 무슨 수를 사용하더라도 알파벳 완성이 안된다는 것 주의
+
+- 회고
+    - 설계 잘하자
+ 
+- 코드
+  - ```cpp
+    #include <iostream>
+    #include <vector>
+    
+    using namespace std;
+    
+    int N, K;
+    vector <int> words;
+    
+    int backtracking(int bits, int idx, int n) {
+        int res = 0;
+        if (n <= 0 || idx == 27) {
+            for (int i = 0; i < N; i++) {
+                if ((bits & words[i]) == words[i]) res++;
+            }
+        } else {
+            for (int i = idx; i <= 26; i++) {
+                if (bits & (1 << i)) continue;
+                int newBits = (bits | (1 << i));
+                res = max(res, backtracking(newBits, i + 1, n - 1));
+            }
+        }
+        return res;
+    }
+    
+    int main() {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL); cout.tie(NULL);
+    
+        cin >> N >> K;
+        words.resize(N, 0);
+    
+        string str;
+        for (int i = 0; i < N; i++) {
+            cin >> str;
+            for (auto &ch : str) {
+                words[i] |= (1 << (ch - 'a'));
+            }
+        }
+        
+        if (K < 5) {
+            cout << 0;
+        } else {
+            cout << backtracking(532741, 0, K - 5);
+        }
+        return 0;
+    }
+    ```
+
+</details>
+
 ## 공부한 내용
 - 뭘했을까
 
