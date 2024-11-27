@@ -185,6 +185,184 @@
 
 </details>
 
+### [BOJ 16211 - 백채원](https://www.acmicpc.net/problem/16211)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅡ
+    - Tag: Dijkstra
+
+- 타임라인
+    - Problem Open: 11/27 12:00
+    - Tag Open: --/-- --:--
+    - Solve: 11/27 21:37
+
+- 풀이
+    - 다익스트라에서 출발점을 여러 부분으로 하여 변형하여 풀이 (코드 참조)
+
+- 회고
+    - 실풀이 대략 80분
+    - 열심히 연습하자.
+ 
+- 코드
+  - ```cpp
+    #include <iostream>
+    #include <algorithm>
+    #include <vector>
+    #include <queue>
+    
+    #define INF 1e9 * 2 + 1
+    
+    using namespace std;
+    typedef long long ll;
+    
+    int N, M, K;
+    vector <vector <pair <int, int>>> graph;
+    vector <ll> runawayDist;
+    vector <ll> chaserDist;
+    
+    void dijkstra(vector <ll> &dist) {
+        priority_queue <pair <ll, int>> pq;
+        for (int i = 0; i < int(dist.size()); i++) {
+            if (dist[i] == 0) {
+                pq.push({0, i});
+            }
+        }
+    
+        while(!pq.empty()) {
+            int s = pq.size();
+    
+            for (int i = 0; i < s; i++) {
+                int curNode = pq.top().second;
+                ll curDist = -pq.top().first;
+                pq.pop();
+    
+                for (auto &nxt : graph[curNode]) {
+                    int nxtNode = nxt.second;
+                    ll nxtDist = curDist + nxt.first;
+                    if (nxtDist < dist[nxtNode]) {
+                        dist[nxtNode] = nxtDist;
+                        pq.push({-nxtDist, nxtNode});
+                    }
+                }
+            }
+        }
+    }
+    
+    int main() {
+        // fastIO
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL); cout.tie(NULL);
+    
+        // init && input
+        cin >> N >> M >> K;
+    
+        graph.resize(N + 1);
+        runawayDist.resize(N + 1, INF);
+        chaserDist.resize(N + 1, INF);
+    
+        int u, v, w;
+        for (int i = 0; i < M; i++) {
+            cin >> u >> v >> w;
+            graph[u].push_back({w, v});
+            graph[v].push_back({w, u});
+        }
+    
+        int p;
+        runawayDist[1] = 0;
+        for (int i = 0; i < K; i++) {
+            cin >> p;
+            chaserDist[p] = 0;
+        }
+    
+        // solve
+        dijkstra(runawayDist);
+        dijkstra(chaserDist);
+    
+        vector <int> ans;
+        for (int i = 2; i <= N; i++) {
+            if (runawayDist[i] < chaserDist[i]) {
+                ans.push_back(i);
+            }
+        }
+    
+        // output
+        if (ans.size() == 0) cout << 0;
+    
+        sort(ans.begin(), ans.end());
+        for (auto &n : ans) {
+            cout << n << ' ';
+        }
+    
+        return 0;
+    }
+    ```
+
+</details>
+
+### [BOJ 22115 - 창영이와 커피](https://www.acmicpc.net/problem/22115)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅡ
+    - Tag: DP
+
+- 타임라인
+    - Problem Open: 11/27 22:10
+    - Tag Open: --/-- --:--
+    - Solve: 11/27 22:23
+
+- 풀이
+    - 0-1 냅색문제를 알고있다면 쉽게 풀리는 문제
+
+- 회고
+    - 익숙한 맛 (영양가는 X)
+ 
+- 코드
+  - ```cpp
+    #include <iostream>
+    #include <vector>
+    
+    using namespace std;
+    
+    int main() {
+        // fastIO
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL); cout.tie(NULL);
+    
+        // init && input
+        int N, K;
+        cin >> N >> K;
+    
+        vector <vector <int>> dp(N + 1, vector <int> (K + 1, 1e9));
+        vector <int> coffee(N + 1);
+    
+        for (int i = 1; i <= N; i++) {
+            cin >> coffee[i];
+        }
+    
+        // solve
+        dp[0][0] = 0;
+        for (int i = 1; i <= N; i++) {
+            for (int j = 0; j <= K; j++) {
+                if (coffee[i] <= j) {
+                    dp[i][j] = min(dp[i - 1][j], dp[i - 1][j - coffee[i]] + 1);
+                } else {
+                    dp[i][j] = dp[i - 1][j];
+                }
+            }
+        }
+    
+        // output
+        cout << (dp[N][K] != 1e9 ? dp[N][K] : -1);
+        return 0;
+    }
+    ```
+
+</details>
+
 ## 공부한 내용
 - 뭘했을까
 
