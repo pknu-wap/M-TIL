@@ -3,6 +3,7 @@
 | 주차 | 날짜 | 주제 | 링크 |
 |--|--|--|--|
 | [1주차](https://github.com/pknu-wap/M-TIL/blob/main/MunbinLee/Week01.md) | 24.11.24 | Rust 공부 시작 | |
+| [2주차](https://github.com/pknu-wap/M-TIL/blob/main/MunbinLee/Week02.md) | 24.12.01 | Rust 공부 2 | |
 
 ### 목표
 1. 컴퓨터활용능력 1급
