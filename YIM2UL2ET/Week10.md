@@ -437,6 +437,75 @@
 
 </details>
 
+### [BOJ 32755 - 차원의 나무 여행](https://www.acmicpc.net/problem/32755)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅣ
+    - Tag: dp
+
+- 타임라인
+    - Problem Open: 12/01 22:00?
+    - Tag Open: --/-- --:--
+    - Solve: 12/01 22:13
+
+- 풀이
+    - 0-1 냅색문제.
+    - $dp[i][j] = i$명을 받기 위해 필요한 코스트
+    - "적어도 $c$ 명" 이므로 $j$ 의 상한은 $c + 100$
+    - $answer = min(dp[n][k]) (c \le k \le c+100)$
+
+- 회고
+    - 쩝..
+ 
+- 코드
+  - ```cpp
+    #include <iostream>
+    #include <vector>
+    
+    using namespace std;
+    
+    int main() {
+        // fastIO
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL); cout.tie(NULL);
+    
+        // init && input
+        int c, n;
+        cin >> c >> n;
+    
+        vector <int> cost(n + 1);
+        vector <int> value(n + 1);
+    
+        for (int i = 1; i <= n; i++) {
+            cin >> cost[i] >> value[i];
+        }
+    
+        // solve
+        vector <vector <int>> dp(n + 1, vector <int>(c + 102, 1e9));
+        dp[0][0] = 0;
+    
+        for (int i = 1; i <= n; i++) {
+            for (int j = 0; j <= c + 101; j++) {
+                dp[i][j] = dp[i - 1][j];
+                for (int k = 0; j >= value[i] * k; k++) {
+                    dp[i][j] = min(dp[i][j], dp[i - 1][j - (value[i] * k)] + (cost[i] * k));
+                }
+            }
+        }
+    
+        int ans = 1e9;
+        for (int i = c; i <= c + 101; i++) {
+            ans = min(ans, dp[n][i]);
+        }
+        cout << ans;
+        return 0;
+    }
+    ```
+
+</details>
+
 ## 참가한 오픈 콘테스트
 
 ### [2024 국민대학교 & 중앙대학교 연합 프로그래밍 경진대회 Open Contest](https://www.acmicpc.net/contest/view/1407)
@@ -488,7 +557,8 @@
 - 없어요. 아는 문제만 골라 품.
 
 ## 다음주 목표
-- 휴가좀 다녀올게요
+- 휴가좀 다녀올게요. (쉬다오기)
 
 ## 특이사항
 - 12/01 ~ 12/09 휴가
+- M4 11인치 아이패드 + 매직키보드 + 애플펜슬 구매. 200만원 플렉스로 지갑이 상당히 가벼워짐.
