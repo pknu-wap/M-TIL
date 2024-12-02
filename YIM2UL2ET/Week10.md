@@ -437,7 +437,7 @@
 
 </details>
 
-### [BOJ 32755 - 차원의 나무 여행](https://www.acmicpc.net/problem/32755)
+### [BOJ 1106 - 호텔](https://www.acmicpc.net/problem/1106)
 <details>
 <summary>보기</summary> 
 
