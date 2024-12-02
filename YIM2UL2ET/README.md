@@ -11,7 +11,8 @@
 | [7주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week07.md) | 24.11.04 ~ 24.11.10 | 동적계획법(DP) | [DP](https://yim2ul2et.github.io/posts/%EB%8F%99%EC%A0%81%EA%B3%84%ED%9A%8D%EB%B2%95/) |
 | [8주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week08.md) | 24.11.11 ~ 24.11.17 | 동적계획법(DP) & 영어(English) | - |
 | [9주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week09.md) | 24.11.18 ~ 24.11.24 | 동적계획법(DP) & 탐욕법(Greedy) | [Greedy](https://yim2ul2et.github.io/posts/%EA%B7%B8%EB%A6%AC%EB%94%94/) |
-| [10주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week10.md) | 24.11.25 ~ 24.12.01 | 조합탐색(Combinatorial Search) | - |
+| [10주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week10.md) | 24.11.25 ~ 24.12.01 | 풀이 연습 | - |
+| [11주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week11.md) | 24.12.02 ~ 24.12.08 | 휴가 (휴식) | - |
 
 
 ## 목표
@@ -34,4 +35,5 @@
 24.11.17 Week08 update
 24.11.24 Week09 update
 24.12.01 Week10 update
+24.12.08 Week11 update
 ```
