@@ -572,11 +572,96 @@
 
 </details>
 
+### [BOJ 1516 - 게임 개발](https://www.acmicpc.net/problem/1516)
+<details>
+<summary>보기</summary> 
+
+- 정보
+    - Tier: GoldⅢ
+    - Tag: topology_sort
+
+- 타임라인
+    - Problem Open: --/-- -:--
+    - Tag Open: --/-- --:--
+    - Solve: 12/14 14:07
+
+- 풀이
+    - "먼저 지어야 하는 건물" -> "나중에 지어야 하는 건물" 로 단방향 그래프 만들기
+	- $dp[i] = i$번째 건물이 지어질 수 있는 최소 시간 = 이전 건물이 지어지는 최소 시간 ($dp[j]$) $+ i$번째 건물을 지을 때 필요한 시간 ($time[i]$)
+	- 메모리 아끼기 위해 (-귀찮으니-) 초기 dp값은 i번째 건물을 지을 때 필요한 시간으로 초기화 (이전 건물이 지어지는 최소 시간을 더하면 됨)
+	- 위상정렬 활용하여 차수가 0이 되는 건물의 dp값 설정 후 우선순위 큐에 삽입, 이때 우선순위 큐는 최소 시간 우선을 기준으로 설정.
+
+- 회고
+    - 위상정렬을 복습할 때..
+ 
+- 코드
+  - ```cpp
+	#include <iostream>
+    #include <queue>
+    #include <vector>
+    
+    using namespace std;
+    
+    int main() {
+        // fastIO
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL); cout.tie(NULL);
+    
+        // init && input
+        int n;
+        cin >> n;
+    
+        vector <int> dp(n + 1);
+        vector <int> degree(n + 1);
+        vector <vector <int>> graph(n + 1);
+    
+        int u;
+        for (int i = 1; i <= n; i++) {
+            cin >> dp[i] >> u;
+            while (u != -1) {
+                graph[u].push_back(i);
+                degree[i]++;
+                cin >> u;
+            }
+        }
+    
+        // solve
+        priority_queue <pair <int, int>> pq;
+        for (int i = 1; i <= n; i++) {
+            if (degree[i] == 0) pq.push({-dp[i], i});
+        }
+    
+        while (!pq.empty()) {
+            int curDist = -pq.top().first;
+            int curNode = pq.top().second;
+            pq.pop();
+    
+            for (auto &nxt : graph[curNode]) {
+                degree[nxt]--;
+                if (degree[nxt] == 0) {
+                    dp[nxt] += curDist;
+                    pq.push({-dp[nxt], nxt});
+                }
+            }
+        }
+    
+        // output
+        for (int i = 1; i <= n; i++) {
+            cout << dp[i] << '\n';
+        }
+        return 0;
+    }
+    ```
+
+</details>
+
 ## 공부한 내용
-- 공부한 내용 노트
+- C++ 기초 플러스 7장 (함수) 복습: 개인 노션에 정리
 
 ## 다음주 목표
 - 문제만 풀지 말고 공부한거 정리하기
+- C++ 기초 플러스 8장 정리
 
 ## 특이사항
-- 2층침대를 1층침대로 바꾸는 생활관 대공사 진행중
+- 2층침대를 1층침대로 바꾸는 생활관 대공사 진행완. (생활관 좁아지니 개불편함)
+- 15일 나홀로 주말외출
