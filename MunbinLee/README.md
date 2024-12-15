@@ -5,6 +5,7 @@
 | [1주차](https://github.com/pknu-wap/M-TIL/blob/main/MunbinLee/Week01.md) | 24.11.24 | Rust 공부 시작 | |
 | [2주차](https://github.com/pknu-wap/M-TIL/blob/main/MunbinLee/Week02.md) | 24.12.01 | Rust 공부 2 | |
 | [3주차](https://github.com/pknu-wap/M-TIL/blob/main/MunbinLee/Week03.md) | 24.12.08 | 개발 환경 업데이트 | |
+| [4주차](https://github.com/pknu-wap/M-TIL/blob/main/MunbinLee/Week04.md) | 24.12.15 | 웹 해킹 공부 | |
 
 ### 목표
 1. 컴퓨터활용능력 1급
