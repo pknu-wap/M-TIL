@@ -2,19 +2,19 @@
 
 | 주차 | 날짜 | 주제 | 링크 |
 |--|--|--|--|
-| [1주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week01.md) | 24.09.23 ~ 24.09.29 | 풀이 연습 & 매개 변수 탐색 (Parametric Search) | [Parametric Search](https://yim2ul2et.github.io/posts/%EC%9D%B4%EB%B6%84%ED%83%90%EC%83%89%EA%B3%BC-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%ED%83%90%EC%83%89/) |
+| [1주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week01.md) | 24.09.23 ~ 24.09.29 | 풀이 연습 & 매개 변수 탐색 (Parametric Search) | [블로그: Parametric Search](https://yim2ul2et.github.io/posts/%EC%9D%B4%EB%B6%84%ED%83%90%EC%83%89%EA%B3%BC-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%ED%83%90%EC%83%89/) |
 | [2주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week02.md) | 24.09.30 ~ 24.10.06 | 풀이 연습 | - |
 | [3주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week03.md) | 24.10.07 ~ 24.10.13 | 풀이 연습 | - |
 | [4주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week04.md) | 24.10.14 ~ 24.10.20 | 풀이 연습 & CLASS 5 획득 | - |
 | [5주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week05.md) | 24.10.21 ~ 24.10.27 | 브루트포스(bruteforcing) & 구현(implementation) | - |
 | [6주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week06.md) | 24.10.28 ~ 24.11.03 | 분할정복(divide_and_conquer) & 동적계획법(DP) | - |
-| [7주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week07.md) | 24.11.04 ~ 24.11.10 | 동적계획법(DP) | [DP](https://yim2ul2et.github.io/posts/%EB%8F%99%EC%A0%81%EA%B3%84%ED%9A%8D%EB%B2%95/) |
+| [7주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week07.md) | 24.11.04 ~ 24.11.10 | 동적계획법(DP) | [블로그: DP](https://yim2ul2et.github.io/posts/%EB%8F%99%EC%A0%81%EA%B3%84%ED%9A%8D%EB%B2%95/) |
 | [8주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week08.md) | 24.11.11 ~ 24.11.17 | 동적계획법(DP) & 영어(English) | - |
-| [9주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week09.md) | 24.11.18 ~ 24.11.24 | 동적계획법(DP) & 탐욕법(Greedy) | [Greedy](https://yim2ul2et.github.io/posts/%EA%B7%B8%EB%A6%AC%EB%94%94/) |
+| [9주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week09.md) | 24.11.18 ~ 24.11.24 | 동적계획법(DP) & 탐욕법(Greedy) | [블로그: Greedy](https://yim2ul2et.github.io/posts/%EA%B7%B8%EB%A6%AC%EB%94%94/) |
 | [10주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week10.md) | 24.11.25 ~ 24.12.01 | 풀이 연습 | - |
 | [11주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week11.md) | 24.12.02 ~ 24.12.08 | 휴가 (휴식) | - |
-| [12주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week12.md) | 24.12.09 ~ 24.12.15 | 풀이 연습 & C++ | - |
-| [13주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week13.md) | 24.12.16 ~ 24.12.22 | 조합 탐색(combinatorial search) & C++ | - |
+| [12주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week12.md) | 24.12.09 ~ 24.12.15 | 풀이 연습 & C++ | [노션: C++ 기초 플러스 7장](https://berry-fisher-f89.notion.site/7-C-15a326d21c2c80fd9dfed86f3fd82347?pvs=4) |
+| [13주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week13.md) | 24.12.16 ~ 24.12.22 | 조합 탐색(combinatorial search) & C++ | [노션: C++ 기초 플러스 8장](https://berry-fisher-f89.notion.site/8-15c326d21c2c80f59d9bd6b311531a93?pvs=4) |
 | [14주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week14.md) | 24.12.23 ~ 24.12.29 | 구현(implementation) & C++ | - |
 
 ## 목표
@@ -25,6 +25,6 @@
 - **모르는게 있으면 붙잡지 말기 (시간 효율적으로 사용하기)**
 
 ## 링크
-- [PS 문제풀이 정리](https://berry-fisher-f89.notion.site/15d326d21c2c80b1aef9ccf5b525a68b?v=c8034750b12644c7a600e4bdacb823a0&pvs=4)
-- [C++ 기초 플러스 정리](https://berry-fisher-f89.notion.site/C-6-15a326d21c2c8089b310e492582d93ae?pvs=4)
+- [노션 PS 문제풀이 정리](https://berry-fisher-f89.notion.site/15d326d21c2c80b1aef9ccf5b525a68b?v=c8034750b12644c7a600e4bdacb823a0&pvs=4)
+- [노션 C++ 기초 플러스 정리](https://berry-fisher-f89.notion.site/C-6-15a326d21c2c8089b310e492582d93ae?pvs=4)
 - [블로그 (알고리즘 정리 등)](https://yim2ul2et.github.io/)
