@@ -1,7 +1,7 @@
 ## 기간
 **24.12.16 ~ 24.12.22**
 
-## [PS 문제풀이 정리](https://www.notion.so/15d326d21c2c80b1aef9ccf5b525a68b?v=c8034750b12644c7a600e4bdacb823a0&pvs=4)
+## [PS 문제풀이 정리](https://berry-fisher-f89.notion.site/15d326d21c2c80b1aef9ccf5b525a68b?v=c8034750b12644c7a600e4bdacb823a0&pvs=4)
 늘 했던 그 맛으로 하루 한문제를 풀었다. 가능하면 골드 스트릭으로 이으려고 하였다.
 지난주 목표와는 조금 다르게 이번 주차는 내가 알고있는 주제만 랜덤 디펜스를 돌려서 풀이했다.
 
