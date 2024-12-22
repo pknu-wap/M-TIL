@@ -17,10 +17,14 @@
 | [13주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week13.md) | 24.12.16 ~ 24.12.22 | 조합 탐색(combinatorial search) & C++ | - |
 | [14주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week14.md) | 24.12.23 ~ 24.12.29 | 구현(implementation) & C++ | - |
 
-
 ## 목표
-- 1Day 1Solve
+- 1Day 1Solve, 1200AC, solved.ac 다이아
 - LaTeX, 영어 공부
 - 블로그와 노션을 활용하여 공부한 내용 정리하기
 - C++ 기초 플러스, 알고리즘 문제 해결 전략, CLRS, 컴퓨터 구조 및 설계 1회 정독하기
 - **모르는게 있으면 붙잡지 말기 (시간 효율적으로 사용하기)**
+
+## 링크
+- [PS 문제풀이 정리](https://berry-fisher-f89.notion.site/15d326d21c2c80b1aef9ccf5b525a68b?v=c8034750b12644c7a600e4bdacb823a0&pvs=4)
+- [C++ 기초 플러스 정리](https://berry-fisher-f89.notion.site/C-6-15a326d21c2c8089b310e492582d93ae?pvs=4)
+- [블로그 (알고리즘 정리 등)](https://yim2ul2et.github.io/)
