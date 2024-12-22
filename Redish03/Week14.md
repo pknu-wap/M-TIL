@@ -9,7 +9,7 @@
 - 알고리즘 5문제
 
 ## 공부한 내용
-- 구교환과 함께하는 <오브젝트> 책 읽기 [05. 책임 할당하기](https://wonderful-report-e58.notion.site/01-1465b07568ed80eb9176fd5df4de053f?pvs=4)
+- 구교환과 함께하는 <오브젝트> 책 읽기 [05. 책임 할당하기](https://wonderful-report-e58.notion.site/05-14f5b07568ed80dc8b72ccac771ce417?pvs=4)
 - [Kotlin In Action, 2장. 코틀린 기초](https://wonderful-report-e58.notion.site/2-1495b07568ed809ba8d1cc0467806643?pvs=4)
 
 ## 다음주 목표
