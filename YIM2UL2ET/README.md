@@ -13,8 +13,9 @@
 | [9주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week09.md) | 24.11.18 ~ 24.11.24 | 동적계획법(DP) & 탐욕법(Greedy) | [Greedy](https://yim2ul2et.github.io/posts/%EA%B7%B8%EB%A6%AC%EB%94%94/) |
 | [10주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week10.md) | 24.11.25 ~ 24.12.01 | 풀이 연습 | - |
 | [11주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week11.md) | 24.12.02 ~ 24.12.08 | 휴가 (휴식) | - |
-| [12주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week12.md) | 24.12.09 ~ 24.12.15 | 풀이 연습 & C++11 | - |
-| [13주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week13.md) | 24.12.16 ~ 24.12.22 | 조합 탐색(combinatorial search) & C++11 | - |
+| [12주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week12.md) | 24.12.09 ~ 24.12.15 | 풀이 연습 & C++ | - |
+| [13주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week13.md) | 24.12.16 ~ 24.12.22 | 조합 탐색(combinatorial search) & C++ | - |
+| [14주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week14.md) | 24.12.23 ~ 24.12.29 | 구현(implementation) & C++ | - |
 
 
 ## 목표
