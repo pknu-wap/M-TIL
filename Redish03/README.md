@@ -7,7 +7,8 @@
 | [3주차](https://github.com/pknu-wap/M-TIL/blob/main/Redish03/Week03.md) | 24.10.13 | 근무 | |
 | [4주차](https://github.com/pknu-wap/M-TIL/blob/main/Redish03/Week04.md) | 24.10.19 | 호국준비 | |
 | [9주차](https://github.com/pknu-wap/M-TIL/blob/main/Redish03/Week09.md) | 24.11.18 | 오브젝트 스터디 | [1. 객체, 설계](https://wonderful-report-e58.notion.site/01-1465b07568ed80eb9176fd5df4de053f?pvs=4) |
-| [14주차](https://github.com/pknu-wap/M-TIL/blob/main/Redish03/Week14.md) | 24.12.22 | 오브젝트 스터디 몰아서 올리기, 연말정산 | []() |
+| [14주차](https://github.com/pknu-wap/M-TIL/blob/main/Redish03/Week14.md) | 24.12.22 | 오브젝트 스터디 올리기 | [05. 책임 할당하기](https://wonderful-report-e58.notion.site/05-14f5b07568ed80dc8b72ccac771ce417?pvs=4) |
+| [15주차](https://github.com/pknu-wap/M-TIL/blob/main/Redish03/Week14.md) | 24.12.22 | 오브젝트 스터디, Kotlin | [6. 메세지와 인터페이스](https://wonderful-report-e58.notion.site/06-1635b07568ed80a68058c5954e189d52?pvs=4), [3장. 함수 정의와 호출](http://wonderful-report-e58.notion.site) |
 
 
 ### 목표
