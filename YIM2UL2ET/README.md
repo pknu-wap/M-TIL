@@ -16,7 +16,7 @@
 | [12주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week12.md) | 24.12.09 ~ 24.12.15 | 풀이 연습 & C++ | [노션: C++ 기초 플러스 7장](https://berry-fisher-f89.notion.site/7-C-15a326d21c2c80fd9dfed86f3fd82347?pvs=4) |
 | [13주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week13.md) | 24.12.16 ~ 24.12.22 | 조합 탐색(Combinatorial Search) & C++ | [노션: C++ 기초 플러스 8장](https://berry-fisher-f89.notion.site/8-15c326d21c2c80f59d9bd6b311531a93?pvs=4) |
 | [14주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week14.md) | 24.12.23 ~ 24.12.29 | 구현(Implementation) & C++ | [노션: C++ 기초 플러스 9장](https://berry-fisher-f89.notion.site/9-163326d21c2c8096b466de5f1ac36d63?pvs=4) |
-| [15주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week15.md) | 24.12.30 ~ 25.01.05 | 수치해석(Numerical Analysis) & C++ | [노션: C++ 기초 플러스 10장]()</br>[블로그: Numerical Analysis]() |
+| [15주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week15.md) | 24.12.30 ~ 25.01.05 | 수치해석(Numerical Analysis) & C++ | [노션: C++ 기초 플러스 10장](https://berry-fisher-f89.notion.site/10-168326d21c2c80f694fbe2663ceaaff8?pvs=4) |
 
 ## 목표
 - 1Day 1Solve, 1200AC, solved.ac 다이아
