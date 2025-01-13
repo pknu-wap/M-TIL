@@ -46,13 +46,15 @@ $x\prime = (x / (c/g))$, $y\prime = (y / (c/g))$이라 한다면 $(a/g)x\prime +
 ---
 
 ## [PS 문제풀이](https://berry-fisher-f89.notion.site/15d326d21c2c80b1aef9ccf5b525a68b?v=c8034750b12644c7a600e4bdacb823a0&pvs=4)
-//사진
+![IMG_1101](https://github.com/user-attachments/assets/373a7063-33b4-450f-af3a-d99b62520a53)
 
 이번 한주는 골플급 문제들을 많이 풀었다. 정수론부터 시작해서 플레 문제들도 좀 돌아보았고 결과적으로 정말 만족한다.
 
 정수론 문제들은 대부분 에라토스테네스를 활용한 소수판정 문제들을 풀었고,
 확장 유클리드 알고리즘을 활용하는 문제와, 골드바흐의 추측을 활용하는 문제도 한문제씩 풀었다.
 이외에는 그래프 활용 문제나, DP문제를 풀었다.
+
+![IMG_1102](https://github.com/user-attachments/assets/38eb9835-e6f3-4701-b90f-519c736a96c4)
 
 토요일에는 경인연합 6개 대학에서 주최하는 [Shake! Open Contest]()에 참가하여 2솔을 하였다.<br>
 문제들의 난이도가 상당했던지라 2솔만으로도 의미가 있다고 생각한다.<br>
