@@ -18,7 +18,7 @@
 | [14주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week14.md) | 24.12.23 ~ 24.12.29 | 구현(Implementation) & C++ | [노션: C++ 기초 플러스 9장](https://berry-fisher-f89.notion.site/9-163326d21c2c8096b466de5f1ac36d63?pvs=4) |
 | [15주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week15.md) | 24.12.30 ~ 25.01.05 | 수치해석(Numerical Analysis) & C++ | [노션: C++ 기초 플러스 10장](https://berry-fisher-f89.notion.site/10-168326d21c2c80f694fbe2663ceaaff8?pvs=4) |
 | [16주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week16.md) | 24.01.06 ~ 25.01.12 | 정수론(1) | - |
-| [17주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week16.md) | 24.01.13 ~ 25.01.19 | 정수론(2) | - |
+| [17주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week17.md) | 24.01.13 ~ 25.01.19 | 정수론(2) | - |
 
 ## 목표
 - 1Day 1Solve, 1200AC, solved.ac 다이아
