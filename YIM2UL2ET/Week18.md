@@ -1,5 +1,5 @@
 ## 기간
-**24.01.20 ~ 25.01.26**
+**25.01.20 ~ 25.01.26**
 
 ## PS 문제풀이
 ![Image](https://github.com/user-attachments/assets/90e749bb-50ad-4adf-8a88-5b7357384407)
