@@ -1,7 +1,7 @@
 ## 기간
 **25.01.20 ~ 25.01.26**
 
-## PS 문제풀이
+## [PS 문제풀이](https://berry-fisher-f89.notion.site/15d326d21c2c80b1aef9ccf5b525a68b?v=171326d21c2c80a381e0000cf3be5a4e&pvs=4)
 ![Image](https://github.com/user-attachments/assets/90e749bb-50ad-4adf-8a88-5b7357384407)
 
 사실 문제들을 풀었다기 보다는, 공부한 것들을 구현해보고 확인해 보았다는 것이 맞는 것 같다.
