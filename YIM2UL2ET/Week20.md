@@ -1,7 +1,7 @@
 ## 기간
 **25.02.03 ~ 25.02.09**
 
-## PS 문제풀이
+## [PS 문제풀이](https://berry-fisher-f89.notion.site/15d326d21c2c80b1aef9ccf5b525a68b?v=171326d21c2c80a381e0000cf3be5a4e&pvs=4)
 ![Image](https://github.com/user-attachments/assets/c70e5106-79fc-48ad-97e6-b8e7875060e1)
 
 이번주는 세그먼트 트리 구현 문제를 풀며 랜덤디펜스를 조금씩 하였다.
