@@ -22,7 +22,8 @@
 | [18주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week18.md) | 25.01.20 ~ 25.01.26 | 정수론(3) & 이분매칭 | - |
 | [19주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week19.md) | 25.01.27 ~ 25.02.02 | 세그먼트 트리 | - |
 | [20주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week20.md) | 25.02.03 ~ 25.02.09 | 휴가 (휴식) | - |
-| [21주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week21.md) | 25.02.10 ~ 25.02.16 | 최대 유량 | - |
+| [21주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week21.md) | 25.02.10 ~ 25.02.16 | 최대 유량 | [노션: 최대 유량](https://berry-fisher-f89.notion.site/Maximum-Flow-18e326d21c2c8019ba1df05f7ffd9304?pvs=4) |
+| [22주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week22.md) | 25.02.17 ~ 25.02.23 | PS 랜덤디펜스 | - |
 
 ## 목표
 - 1Day 1Solve, 1200AC, solved.ac 다이아
