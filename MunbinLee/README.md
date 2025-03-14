@@ -8,8 +8,9 @@
 | [4주차](https://github.com/pknu-wap/M-TIL/blob/main/MunbinLee/Week04.md) | 24.12.15 | 웹 해킹 공부 | |
 | [5주차](https://github.com/pknu-wap/M-TIL/blob/main/MunbinLee/Week05.md) | 24.12.29 | 사지방 탐구 | |
 | [6주차](https://github.com/pknu-wap/M-TIL/blob/main/MunbinLee/Week06.md) | 25.01.05 | 사지방 취약점 탐구 | |
-| [7주차](https://github.com/pknu-wap/M-TIL/blob/main/MunbinLee/Week06.md) | 25.01.27 | 알고리즘 | |
-| [8주차](https://github.com/pknu-wap/M-TIL/blob/main/MunbinLee/Week06.md) | 25.02.02 | 알고리즘 2 | |
+| [7주차](https://github.com/pknu-wap/M-TIL/blob/main/MunbinLee/Week07.md) | 25.01.27 | 알고리즘 | |
+| [8주차](https://github.com/pknu-wap/M-TIL/blob/main/MunbinLee/Week08.md) | 25.02.02 | 알고리즘 2 | |
+| [9주차](https://github.com/pknu-wap/M-TIL/blob/main/MunbinLee/Week09.md) | 25.03.14 | 사X방 | |
 
 ### 목표
 1. 컴퓨터활용능력 1급
