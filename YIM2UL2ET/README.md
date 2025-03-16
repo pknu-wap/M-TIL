@@ -25,16 +25,18 @@
 | [21주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week21.md) | 25.02.10 ~ 25.02.16 | 최대 유량 (Ford-Fulkerson, Edmonds-Karp) | [노션: 최대 유량](https://berry-fisher-f89.notion.site/Maximum-Flow-18e326d21c2c8019ba1df05f7ffd9304?pvs=4) |
 | [22주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week22.md) | 25.02.17 ~ 25.02.23 | PS 랜덤디펜스 & Dinitz' Algorithm | - |
 | [23주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week23.md) | 25.02.24 ~ 25.03.02 | PS 랜덤디펜스 | [노션: 오일러정리 등](https://berry-fisher-f89.notion.site/1a5326d21c2c8061b8e4e096d0ac4f93?pvs=4) |
-| [24주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week24.md) | 25.03.03 ~ 25.03.09 | PS 랜덤디펜스 | - |
+| [24주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week24.md) | 25.03.03 ~ 25.03.09 | 휴가 (휴식) | - |
+| [25주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week25.md) | 25.03.10 ~ 25.03.16 | 자잘한것들 | - |
 
 ## 목표
-- 1Day 1Solve, 1200AC, CLASS7, solved.ac 다이아
+- 1Day 1Solve, 1200AC, CLASS7, solved.ac 다이아, **진짜 실력 올리기**
 - LaTeX, 영어 공부
 - 블로그와 노션을 활용하여 공부한 내용 정리하기
-- C++ 기초 플러스, 알고리즘 문제 해결 전략, CLRS, 컴퓨터 구조 및 설계 1회 정독하기
-- **모르는게 있으면 붙잡지 말기 (시간 효율적으로 사용하기)**
+- C++ 기초 플러스, 알고리즘 문제 해결 전략, CLRS, 컴퓨터 구조 및 설계 1회 정독하고 정리하기
+- **시간 효율적으로 사용하기**
 
 ## 링크
-- [노션 PS 문제풀이 정리](https://berry-fisher-f89.notion.site/15d326d21c2c80b1aef9ccf5b525a68b?v=c8034750b12644c7a600e4bdacb823a0&pvs=4)
-- [노션 C++ 기초 플러스 정리](https://berry-fisher-f89.notion.site/C-6-15a326d21c2c8089b310e492582d93ae?pvs=4)
+- [(구) 노션 PS 문제풀이 정리](https://berry-fisher-f89.notion.site/15d326d21c2c80b1aef9ccf5b525a68b?v=c8034750b12644c7a600e4bdacb823a0&pvs=4)
+- [노션 PS용 알고리즘 정리](https://berry-fisher-f89.notion.site/PS-1ac326d21c2c80c6a662f0f406e48474?pvs=4)
+- [노션 C++ 기초 플러스 정리](https://berry-fisher-f89.notion.site/15d326d21c2c80c4a2c6f94521757c14?v=93ace7f076324ddb94e6430cbb4b7441&pvs=4)
 - [블로그 (알고리즘 정리 등)](https://yim2ul2et.github.io/)
