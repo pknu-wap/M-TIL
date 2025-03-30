@@ -28,6 +28,7 @@
 | 24주차 | 25.03.03 ~ 25.03.09 | 휴가 (휴식) | - |
 | [25주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week25.md) | 25.03.10 ~ 25.03.16 | 자잘한것들 | - |
 | [26주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week26.md) | 25.03.17 ~ 25.03.23 | PS 랜덤디펜스 & 선분 교차 | [노션: 선분 교차](https://berry-fisher-f89.notion.site/Intersection-Distance-1bc326d21c2c80aa922de42c0aa85506?pvs=4) |
+| [27주차](https://github.com/pknu-wap/M-TIL/blob/main/YIM2UL2ET/Week27.md) | 25.03.24 ~ 25.03.30 | PS 랜덤디펜스 & Trie & KMP | - |
 
 ## 목표
 - 1Day 1Solve, 1200AC, CLASS7, solved.ac 다이아, **진짜 실력 기르기**
