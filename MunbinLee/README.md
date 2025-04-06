@@ -11,10 +11,11 @@
 | [7주차](https://github.com/pknu-wap/M-TIL/blob/main/MunbinLee/Week07.md) | 25.01.27 | 알고리즘 | |
 | [8주차](https://github.com/pknu-wap/M-TIL/blob/main/MunbinLee/Week08.md) | 25.02.02 | 알고리즘 2 | |
 | [9주차](https://github.com/pknu-wap/M-TIL/blob/main/MunbinLee/Week09.md) | 25.03.14 | 사X방 | |
+| [10주차](https://github.com/pknu-wap/M-TIL/blob/main/MunbinLee/Week10.md) | 25.04.06| 게임 개발 계획 | |
 
 ### 목표
 1. 컴퓨터활용능력 1급
 2. 정보처리기능사
-3. 만들면서 배우는 러스트 프로그래밍 완독
+3. **만들면서 배우는 러스트 프로그래밍 완독 (완)**
 4. 전역 전까지 개인 프로젝트 1개 이상 완성
 5. 티스토리 블로그 개편
